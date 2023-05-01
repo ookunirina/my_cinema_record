@@ -87,12 +87,4 @@ README〜ER図作成：5/13 〆切
 
 
 # 使用する予定の技術
-Rails6
-font-awesome-sass
-carrierwave
-mini_magick
-decorator
-jQuery Raty
-MySQL 
-Bootstrap(jpn.css,Rin,Honoka)
-TMDb API
+Rails5
