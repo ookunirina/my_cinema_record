@@ -87,4 +87,4 @@ README〜ER図作成：5/13 〆切
 
 
 # 使用する予定の技術
-Rails5
+Rails7
