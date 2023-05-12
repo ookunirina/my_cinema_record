@@ -90,4 +90,4 @@ README〜ER図作成：5/13 〆切
 Rails7
 
 # 画面遷移図
-https://www.figma.com/file/81PtjHevLvkETRG2B4ra01/%E7%84%A1%E9%A1%8C-(%E3%82%B3%E3%83%94%E3%83%BC)?type=design&node-id=0%3A1&t=U9a4NQPnAsQ6G3nu-1
+https://www.figma.com/file/81PtjHevLvkETRG2B4ra01/%E7%84%A1%E9%A1%8C-(%E3%82%B3%E3%83%94%E3%83%BC)?type=design&node-id=0%3A1&t=zpEJzfdOOgr0Xmy7-1
