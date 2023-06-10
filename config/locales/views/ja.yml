@@ -1,0 +1,47 @@
+ja:
+  defaults:
+    login: 'ログイン'
+    sign_up: '新規登録'
+    register: '登録！'
+    logout: 'ログアウト'
+    message:
+      require_login: 'ログインしてください'
+
+  users:
+    new:
+      title: 'ユーザー登録'
+      to_login_page: 'ログインページへ'
+
+    create: 
+      success: 'ユーザー登録が完了しました'
+      fail: 'ユーザー登録に失敗しました'
+
+  user_sessions:
+    new:
+      title: 'ログイン'
+      to_register_page: '登録ページへ'
+      password_forget: 'パスワードをお忘れの方'
+
+    create:
+      success: 'ログインしました'
+      fail: 'ログインに失敗しました'
+      
+    destroy:
+      success: 'ログアウトしました'
+
+  movierecords:
+    index:
+      title: '映画の記録一覧'
+      no_result: '映画の記録がありません'
+    new:
+      title: '映画の記録作成'
+    show:
+      title: '映画の記録詳細'
+    edit:
+      title: '映画の記録編集'
+
+  time:
+    formats:
+      default: "%Y年%m月%d日(%a) %H時%M分%S秒 %z"
+      long: "%Y/%m/%d %H:%M"
+      short: "%m/%d %H:%M"
