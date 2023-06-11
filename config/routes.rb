@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root 'top#index'
   resources :users, only: %i[new create]
+  resources :movierecords, only: %i[index]
 end
