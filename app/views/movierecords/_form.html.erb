@@ -17,4 +17,7 @@
       <%= f.text_area :review, class: 'form-control', rows: 10 %>
     </div>
     <%= f.submit t('defaults.movierecord'), class: 'btn btn-primary' %>
+    <div>
+    <%= link_to t('defaults.back'), movierecords_path, class: 'navbar-brand' %>
+    </div>
   <% end %>
