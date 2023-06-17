@@ -4,6 +4,7 @@ ja:
     sign_up: '新規登録'
     register: '登録！'
     logout: 'ログアウト'
+    movierecord: '記録する'
     message:
       require_login: 'ログインしてください'
 
@@ -32,13 +33,18 @@ ja:
   movierecords:
     index:
       title: '映画の記録一覧'
+      making: '映画の記録を作成する'
       no_result: '映画の記録がありません'
     new:
-      title: '映画の記録作成'
+      title: '映画の記録を作成'
+      back: '映画の記録に戻る'
     show:
       title: '映画の記録詳細'
     edit:
-      title: '映画の記録編集'
+      title: '映画の記録を編集'
+    create:
+      success: '記録を作成しました'
+      fail: '記録を作成できませんでした'
 
   time:
     formats:
