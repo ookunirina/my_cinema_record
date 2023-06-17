@@ -13,6 +13,17 @@
         <ul class="list-inline">
           <li class="list-inline-item">
           </li>
+        <div>
+        <p>総合評価：
+        <span class="star-rating">
+         <span class="star-rating-front" style="width: <%= getPercent(movierecord.star) %>%;">★★★★★</span>
+         <span class="star-rating-back">★★★★★</span>
+        </span> 
+        </p> 
+        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+          </li>
           <li class="list-inline-item">
             <%= icon 'far', 'calendar' %>
             <%= l movierecord.created_at, format: :long %>
