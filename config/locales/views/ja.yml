@@ -5,6 +5,7 @@ ja:
     register: '登録！'
     logout: 'ログアウト'
     movierecord: '記録する'
+    back: '戻る'
     message:
       require_login: 'ログインしてください'
 
@@ -37,7 +38,6 @@ ja:
       no_result: '映画の記録がありません'
     new:
       title: '映画の記録を作成'
-      back: '映画の記録に戻る'
     show:
       title: '映画の記録詳細'
     edit:
