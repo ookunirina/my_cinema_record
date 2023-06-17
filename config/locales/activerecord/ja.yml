@@ -7,3 +7,10 @@ ja:
         email: 'メールアドレス'
         password: 'パスワード'
         password_confirmation: 'パスワード確認'
+      movierecord:
+        title: '映画のタイトル'
+        genre: 'ジャンル'
+        star: '星評価'
+        tag: 'タグ'
+        image_url: '写真'
+        review: '感想'
