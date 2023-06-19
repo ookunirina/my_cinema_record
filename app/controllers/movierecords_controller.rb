@@ -25,6 +25,6 @@ class MovierecordsController < ApplicationController
   private
 
   def movierecord_params
-    params.require(:movierecord).permit(:title, :image_url, :genre, :star, :review)
+    params.require(:movierecord).permit(:title, :image_url, :image_url_cache, :genre, :star, :review)
   end
 end
