@@ -403,7 +403,6 @@ DEPENDENCIES
   rspec-rails
   rubocop
   rubocop-rails
-  sassc-rails
   solargraph
   sorcery
   sprockets-rails
