@@ -1,0 +1,37 @@
+<div class="container pt-5">
+  <div class="row mb-3">
+    <div class="col-lg-8 offset-lg-2">
+      <h1><%= t('.title') %></h1>
+      <!-- 掲示板内容 -->
+      <article class="card">
+        <div class="card-body">
+          <div class='row'>
+            <div class='col-md-3'>
+              <%= image_tag @movierecord.image_url.url, class: 'card-img-top img-fluid', size: '300x200' %>
+            </div>
+            <div class='col-md-9'>
+              <h3 class="d-inline"><%= @movierecord.title %></h3>
+              <p>ジャンル： <%= @movierecord.genre %></p>
+              <div>
+                <p>総合評価：
+                  <span class="star-rating">
+                    <span class="star-rating-front" style="width: <%= getPercent(@movierecord.star) %>%;">★★★★★</span>
+                    <span class="star-rating-back">★★★★★</span>
+                  </span>
+                </p>
+              </div>
+              <div>
+              <a>感想</a>
+              <%= simple_format (@movierecord.review) %>
+              </div>
+              <ul class="list-inline">
+                <li class="list-inline-item">by <%= @movierecord.user.name %></li>
+                <li class="list-inline-item"><%= l @movierecord.created_at, format: :long  %></li>
+              </ul>
+              <%= render 'crud_menus', movierecord: @movierecord %>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
