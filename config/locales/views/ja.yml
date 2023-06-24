@@ -8,6 +8,10 @@ ja:
     back: '戻る'
     message:
       require_login: 'ログインしてください'
+      updated: '記録を更新しました'
+      not_updated: '記録を更新できませんでした'
+      deleted: '記録を削除しました'
+      delete_confirm: '削除しますか？'
 
   users:
     new:

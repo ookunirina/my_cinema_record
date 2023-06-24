@@ -25,7 +25,7 @@
             <%= l movierecord.created_at, format: :long %>
           </li>
         </ul>
-        <%= render 'crud_menus', movierecord: movierecord %>
+        <%= render 'crud_menus', movierecord: movierecord if current_user.own?(movierecord)%>
       </div>
     </div>
   </div>

@@ -10,5 +10,5 @@ Rails.application.routes.draw do
   get 'movie_information', to: 'movie_information#index'
 
   resources :users, only: %i[new create]
-  resources :movierecords, only: %i[index new create show]
+  resources :movierecords
 end
