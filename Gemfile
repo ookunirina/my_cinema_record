@@ -46,6 +46,7 @@ gem "bootsnap", require: false
 gem 'font-awesome-sass', '~> 5.12.0'
 gem "bootstrap", "~> 5.2.3"
 gem 'jquery-rails'
+gem 'sass-rails'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
