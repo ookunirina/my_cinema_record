@@ -6,9 +6,9 @@ class ProfilesController < ApplicationController
 
   def update
     if @user.update(user_params)
-      redirect_to profile_path, success: 'defaults.message.updated'
+      redirect_to profile_path, success: t('defaults.message.updated')
     else
-      flash.now[:danger] = 'defaults.message.not_updated'
+      flash.now[:danger] = t('defaults.message.not_updated')
       render :edit, status: :unprocessable_entity
     end
 

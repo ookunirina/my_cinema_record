@@ -53,6 +53,8 @@ ja:
   profiles:
     show:
       title: 'マイページ'
+    edit:
+      title: 'プロフィール編集'
 
 
   time:
