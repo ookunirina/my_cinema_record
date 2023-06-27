@@ -4,9 +4,11 @@ ja:
       user: 'ユーザー'
     attributes:
       user:
+        name: '名前'
         email: 'メールアドレス'
         password: 'パスワード'
         password_confirmation: 'パスワード確認'
+        avatar: 'アバター'
       movierecord:
         title: '映画のタイトル'
         genre: 'ジャンル'

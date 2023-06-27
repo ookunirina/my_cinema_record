@@ -7,7 +7,6 @@ class UsersController < ApplicationController
 
     def create
         @user =User.new(user_params)
-        @user.name ||= "Default Name"
         if @user.save
             redirect_to login_path, success: t('.success')
         else
@@ -19,6 +18,6 @@ class UsersController < ApplicationController
     private
 
     def user_params
-        params.require(:user).permit(:email, :password, :password_confirmation)
+        params.require(:user).permit(:name, :email, :password, :password_confirmation)
     end
 end

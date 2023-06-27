@@ -1,0 +1,74 @@
+.top-title h1 {
+  left: 10%;
+  top: 40%;
+  color: rgba(239, 232, 62, 1);
+  text-align: center;
+  font-family: cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 90px;
+  white-space     : nowrap;
+}
+
+body {
+  background-color: #840000f1;
+}
+
+
+.sav-title h3 {
+  position: absolute;
+    width: 90%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    top: 40%;
+    margin-bottom: 20px
+}
+
+
+.bg-light {
+    background-color: #840000f1 !important;
+}
+
+
+  .btn {
+    background-color: rgb(253, 202, 210);
+    color: rgb(0, 0, 0);
+    box-shadow    : 4px 4px #666666;  
+    border-radius: 100vh;
+  }
+
+  .btn:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+  }
+
+
+  .nav-link1 a {
+    color: #ffffff;
+    font-size: 2rem;
+  }
+
+  .nav-link2 a {
+    color: #ffffff;
+  }
+
+  .btn1 {
+    background-color: rgba(239, 232, 62, 1);
+    color: black;
+  }
+
+  .btn2 {
+    background-color: rgb(250, 0, 0);
+    color: black;
+  }
+  .custom-image {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .navbar-brand {
+    color: rgba(239, 232, 62, 1);
+    font-family: cursive;
+  }
+  
+  

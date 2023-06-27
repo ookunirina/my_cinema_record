@@ -6,11 +6,12 @@ ja:
     logout: 'ログアウト'
     movierecord: '記録する'
     back: '戻る'
+    edit: '編集'
     message:
       require_login: 'ログインしてください'
-      updated: '記録を更新しました'
-      not_updated: '記録を更新できませんでした'
-      deleted: '記録を削除しました'
+      updated: '更新しました'
+      not_updated: '更新できませんでした'
+      deleted: '削除しました'
       delete_confirm: '削除しますか？'
 
   users:
@@ -49,6 +50,12 @@ ja:
     create:
       success: '記録を作成しました'
       fail: '記録を作成できませんでした'
+  profiles:
+    show:
+      title: 'マイページ'
+    edit:
+      title: 'プロフィール編集'
+
 
   time:
     formats:
