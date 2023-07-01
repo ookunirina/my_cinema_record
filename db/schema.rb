@@ -10,14 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_29_162347) do
-  create_table "movierecords", charset: "utf8mb4", force: :cascade do |t|
+ActiveRecord::Schema[7.0].define(version: 2023_07_01_093625) do
+  create_table "likes", charset: "utf8mb4", force: :cascade do |t|
     t.bigint "user_id", null: false
+    t.bigint "movierecord_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["movierecord_id"], name: "index_likes_on_movierecord_id"
+    t.index ["user_id", "movierecord_id"], name: "index_likes_on_user_id_and_movierecord_id", unique: true
+    t.index ["user_id"], name: "index_likes_on_user_id"
+  end
+
+  create_table "movierecords", charset: "utf8mb4", force: :cascade do |t|
     t.string "title", null: false
     t.string "image_url"
     t.string "genre", null: false
     t.integer "star"
     t.text "review", null: false
+    t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_movierecords_on_user_id"
@@ -35,5 +45,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_29_162347) do
     t.index ["name"], name: "index_users_on_name", unique: true
   end
 
+  add_foreign_key "likes", "movierecords"
+  add_foreign_key "likes", "users"
   add_foreign_key "movierecords", "users"
 end
