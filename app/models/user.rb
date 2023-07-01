@@ -4,6 +4,8 @@ class User < ApplicationRecord
   mount_uploader :avatar, AvatarUploader
 
   has_many :movierecords, dependent: :destroy
+  has_many :likes, dependent: :destroy
+  has_many :likes_movierecords, through: :likes, source: :movierecord
 
   validates :password, length: { minimum: 3 }, if: -> { new_record? || changes[:crypted_password] }
   validates :password, confirmation: true, if: -> { new_record? || changes[:crypted_password] }
