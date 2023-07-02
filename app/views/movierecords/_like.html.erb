@@ -1,0 +1,4 @@
+<%= link_to likes_path(movierecord_id: movierecord.id), id: "js-like-button-fort-movierecord-#{movierecord.id}", class:"float-right", data: { "turbo-method": :post } , remote: true do %>
+  <i class="fa-regular fa-thumbs-up" style="color: black;"></i>
+  <span style="color: black;"><%= movierecord.likes.count %></span>
+<% end %>

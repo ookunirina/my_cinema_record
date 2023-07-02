@@ -1,0 +1,5 @@
+<% if current_user.like?(movierecord) %>
+  <%= render 'unlike', { movierecord: movierecord } %>
+<% else %>
+  <%= render 'like', { movierecord: movierecord } %>
+<% end %>

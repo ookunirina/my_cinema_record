@@ -6,6 +6,7 @@ ja:
     logout: 'ログアウト'
     movierecord: '記録する'
     back: '戻る'
+    topback: 'トップページに戻る'
     edit: '編集'
     message:
       require_login: 'ログインしてください'
@@ -47,12 +48,16 @@ ja:
       title: '映画の記録詳細'
     edit:
       title: '映画の記録を編集'
+    likes:
+      title: 'ブックマーク一覧'
+      no_result: 'ブックマーク中の掲示板がありません。'
     create:
       success: '記録を作成しました'
       fail: '記録を作成できませんでした'
   profiles:
     show:
       title: 'マイページ'
+      making: '映画の記録を作成する'
     edit:
       title: 'プロフィール編集'
 
