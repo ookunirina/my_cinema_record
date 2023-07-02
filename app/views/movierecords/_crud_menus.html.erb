@@ -5,7 +5,7 @@
     <% end %>
   </li>
   <li class="list-inline-item">
-  <%= button_to movierecord_path(movierecord), id: "button-delete-#{movierecord.id}", method: :delete, data: { turbo_confirm: t('defaults.message.delete_confirm') }, class: 'btn2 btn-danger', remote: true do %>
+  <%= button_to movierecord_path(movierecord), id: "button-delete-#{movierecord.id}", method: :delete, data: { turbo: false }, form: { onSubmit: "return check();" }, class: 'btn2 btn-danger', remote: true do %>
   <%= icon 'fas', 'trash' %>
   <% end %>
   </li>
