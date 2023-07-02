@@ -10,6 +10,12 @@ Rails.application.routes.draw do
   get 'movie_information', to: 'movie_information#index'
 
   resources :users, only: %i[new create]
-  resources :movierecords
+  resources :movierecords do
+    collection do
+      get :likes
+    end
+  end
+
+  resources :likes, only: %i[create destroy]
   resource :profile, only: %i[show edit update]
 end

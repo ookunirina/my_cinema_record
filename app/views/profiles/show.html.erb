@@ -17,8 +17,9 @@
       <!-- ここにユーザーのおすすめ映画と他ユーザーのオススメ映画表示予定 -->
       <!-- 各種リンク↓ -->
       <%= link_to "自分が観た映画の記録", "#" %>
-      <%= link_to "観た映画の記録をする", new_movierecord_path, class: 'nav-link' %>
-      <%= link_to "トップページに戻る", root_path, class: 'navbar-brand' %>
+      <%= link_to t('movierecords.likes.title'), likes_movierecords_path, class: 'nav-link' %>
+      <%= link_to t('.making'), new_movierecord_path, class: 'nav-link' %>
+      <%= link_to (t 'defaults.topback'), root_path, class: 'navbar-brand' %>
     </div>
   </div>
 </div>

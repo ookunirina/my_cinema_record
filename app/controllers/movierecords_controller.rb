@@ -43,6 +43,10 @@ class MovierecordsController < ApplicationController
     redirect_to movierecords_path, success: t('defaults.message.deleted')
   end
 
+  def likes
+    @like_movierecords = current_user.like_movierecords.includes(:user).order(created_at: :desc)
+  end
+
   private
 
   def movierecord_params
