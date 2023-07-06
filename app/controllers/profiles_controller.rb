@@ -12,9 +12,9 @@ class ProfilesController < ApplicationController
       render :edit, status: :unprocessable_entity
     end
 
-  def show
+    def show
+    end
   end
-end
 
   private
   def set_user
@@ -22,6 +22,6 @@ end
   end
 
   def user_params
-    params.require(:user).permit(:name, :email, :avatar, :avatar_cache)
+    params.require(:user).permit(:name, :email, :avater, :avater_cache)
   end
 end
