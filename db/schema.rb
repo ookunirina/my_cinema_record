@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_01_093625) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_17_111016) do
   create_table "likes", charset: "utf8mb4", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "movierecord_id", null: false
@@ -19,6 +19,16 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_01_093625) do
     t.index ["movierecord_id"], name: "index_likes_on_movierecord_id"
     t.index ["user_id", "movierecord_id"], name: "index_likes_on_user_id_and_movierecord_id", unique: true
     t.index ["user_id"], name: "index_likes_on_user_id"
+  end
+
+  create_table "movierecord_tags", charset: "utf8mb4", force: :cascade do |t|
+    t.bigint "movierecord_id", null: false
+    t.bigint "tag_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["movierecord_id", "tag_id"], name: "index_movierecord_tags_on_movierecord_id_and_tag_id", unique: true
+    t.index ["movierecord_id"], name: "index_movierecord_tags_on_movierecord_id"
+    t.index ["tag_id"], name: "index_movierecord_tags_on_tag_id"
   end
 
   create_table "movierecords", charset: "utf8mb4", force: :cascade do |t|
@@ -31,6 +41,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_01_093625) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_movierecords_on_user_id"
+  end
+
+  create_table "tags", charset: "utf8mb4", force: :cascade do |t|
+    t.string "name", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_tags_on_name", unique: true
   end
 
   create_table "users", charset: "utf8mb4", force: :cascade do |t|
@@ -47,5 +64,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_01_093625) do
 
   add_foreign_key "likes", "movierecords"
   add_foreign_key "likes", "users"
+  add_foreign_key "movierecord_tags", "movierecords"
+  add_foreign_key "movierecord_tags", "tags"
   add_foreign_key "movierecords", "users"
 end
