@@ -14,10 +14,10 @@ checking for Random.bytes... yes
 creating Makefile
 
 current directory: /Users/ookuniosamusai/workspace/runteq/my_cinema_record/vendor/bundle/ruby/3.2.0/gems/puma-5.6.5/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20230618-7876-gu0k4b sitelibdir\=./.gem.20230618-7876-gu0k4b clean
+make DESTDIR\= sitearchdir\=./.gem.20230705-4316-dspux3 sitelibdir\=./.gem.20230705-4316-dspux3 clean
 
 current directory: /Users/ookuniosamusai/workspace/runteq/my_cinema_record/vendor/bundle/ruby/3.2.0/gems/puma-5.6.5/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20230618-7876-gu0k4b sitelibdir\=./.gem.20230618-7876-gu0k4b
+make DESTDIR\= sitearchdir\=./.gem.20230705-4316-dspux3 sitelibdir\=./.gem.20230705-4316-dspux3
 compiling http11_parser.c
 compiling mini_ssl.c
 compiling puma_http11.c
@@ -25,8 +25,8 @@ linking shared-object puma/puma_http11.bundle
 ld: warning: -undefined dynamic_lookup may not work with chained fixups
 
 current directory: /Users/ookuniosamusai/workspace/runteq/my_cinema_record/vendor/bundle/ruby/3.2.0/gems/puma-5.6.5/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20230618-7876-gu0k4b sitelibdir\=./.gem.20230618-7876-gu0k4b install
-/usr/bin/install -c -m 0755 puma_http11.bundle ./.gem.20230618-7876-gu0k4b/puma
+make DESTDIR\= sitearchdir\=./.gem.20230705-4316-dspux3 sitelibdir\=./.gem.20230705-4316-dspux3 install
+/usr/bin/install -c -m 0755 puma_http11.bundle ./.gem.20230705-4316-dspux3/puma
 
 current directory: /Users/ookuniosamusai/workspace/runteq/my_cinema_record/vendor/bundle/ruby/3.2.0/gems/puma-5.6.5/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20230618-7876-gu0k4b sitelibdir\=./.gem.20230618-7876-gu0k4b clean
+make DESTDIR\= sitearchdir\=./.gem.20230705-4316-dspux3 sitelibdir\=./.gem.20230705-4316-dspux3 clean
