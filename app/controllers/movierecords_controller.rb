@@ -2,6 +2,7 @@ class MovierecordsController < ApplicationController
   before_action :set_movierecord, only: [:edit, :update, :destroy]
 
   def index
+    @tag_list = Tag.all
     @movierecords = Movierecord.all.includes(:user).order(created_at: :desc)
     #@movierecords = Movierecord.where.not(user_id: current_user.id).includes(:user).order(created_at: :desc) ユーザー以外のみ表示
   end
@@ -12,7 +13,9 @@ class MovierecordsController < ApplicationController
 
   def create
     @movierecord = current_user.movierecords.build(movierecord_params)
+    tag_names = params.dig(:movierecord, :tag).split(',').map(&:strip).uniq
     if @movierecord.save
+      @movierecord.save_with_tags(tag_names: tag_names)
       redirect_to movierecords_path, success: t('movierecords.create.success')
     else
       flash.now['danger'] = t('movierecords.create.fail')
@@ -22,15 +25,19 @@ class MovierecordsController < ApplicationController
 
   def show
     @movierecord = Movierecord.find(params[:id])
+    @movierecord.tags = @movierecord.tags
   end
 
   def edit
     @movierecord = current_user.movierecords.find(params[:id])
+    @tag_list = @movierecord.tags.pluck(:name).join(',')
   end
 
   def update
     @movierecord = current_user.movierecords.find(params[:id])
+    tag_list = params[:movierecord][:tag].split(',').map(&:strip).uniq
     if @movierecord.update(movierecord_params)
+      @movierecord.save_with_tags(tag_names: tag_list)
       redirect_to @movierecord, success: t('defaults.message.updated')
     else
       flash.now['danger'] = t('defaults.message.not_updated')

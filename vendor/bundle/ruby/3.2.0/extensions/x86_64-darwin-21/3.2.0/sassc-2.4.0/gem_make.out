@@ -3,10 +3,10 @@ current directory: /Users/ookuniosamusai/workspace/runteq/my_cinema_record/vendo
 creating Makefile
 
 current directory: /Users/ookuniosamusai/workspace/runteq/my_cinema_record/vendor/bundle/ruby/3.2.0/gems/sassc-2.4.0/ext
-make DESTDIR\= sitearchdir\=./.gem.20230618-7876-wffu4w sitelibdir\=./.gem.20230618-7876-wffu4w clean
+make DESTDIR\= sitearchdir\=./.gem.20230705-4316-l70f95 sitelibdir\=./.gem.20230705-4316-l70f95 clean
 
 current directory: /Users/ookuniosamusai/workspace/runteq/my_cinema_record/vendor/bundle/ruby/3.2.0/gems/sassc-2.4.0/ext
-make DESTDIR\= sitearchdir\=./.gem.20230618-7876-wffu4w sitelibdir\=./.gem.20230618-7876-wffu4w
+make DESTDIR\= sitearchdir\=./.gem.20230705-4316-l70f95 sitelibdir\=./.gem.20230705-4316-l70f95
 compiling ./libsass/src/ast.cpp
 compiling ./libsass/src/ast2c.cpp
 compiling ./libsass/src/ast_fwd_decl.cpp
@@ -87,8 +87,8 @@ linking shared-object sassc/libsass.bundle
 ld: warning: -undefined dynamic_lookup may not work with chained fixups
 
 current directory: /Users/ookuniosamusai/workspace/runteq/my_cinema_record/vendor/bundle/ruby/3.2.0/gems/sassc-2.4.0/ext
-make DESTDIR\= sitearchdir\=./.gem.20230618-7876-wffu4w sitelibdir\=./.gem.20230618-7876-wffu4w install
-/usr/bin/install -c -m 0755 libsass.bundle ./.gem.20230618-7876-wffu4w/sassc
+make DESTDIR\= sitearchdir\=./.gem.20230705-4316-l70f95 sitelibdir\=./.gem.20230705-4316-l70f95 install
+/usr/bin/install -c -m 0755 libsass.bundle ./.gem.20230705-4316-l70f95/sassc
 
 current directory: /Users/ookuniosamusai/workspace/runteq/my_cinema_record/vendor/bundle/ruby/3.2.0/gems/sassc-2.4.0/ext
-make DESTDIR\= sitearchdir\=./.gem.20230618-7876-wffu4w sitelibdir\=./.gem.20230618-7876-wffu4w clean
+make DESTDIR\= sitearchdir\=./.gem.20230705-4316-l70f95 sitelibdir\=./.gem.20230705-4316-l70f95 clean

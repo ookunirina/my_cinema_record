@@ -16,6 +16,10 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :tags do
+    get 'movierecords'
+  end
+
   resources :likes, only: %i[create destroy]
   resource :profile, only: %i[show edit update]
 end
