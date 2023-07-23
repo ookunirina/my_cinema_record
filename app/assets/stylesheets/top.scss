@@ -1,14 +1,19 @@
+.top-title {
+  text-align: center; 
+  margin-top: 80px;
+  
+}
+
 .top-title h1 {
-  left: 10%;
-  top: 40%;
-  color: rgba(239, 232, 62, 1);
-  text-align: center;
+  font-size: 110px;
+  text-align:center;
+  line-height:0.95em;
   font-family: cursive;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 100px;
-  line-height: 90px;
-  white-space     : nowrap;
+  color: transparent;
+  background: repeating-linear-gradient(0deg, #B67B03 0.1em, #DAAF08 0.2em, #FEE9A0 0.3em, #DAAF08 0.4em, #B67B03 0.5em); 
+  -webkit-background-clip: text;
+  -webkit-box-reflect: below -0.25em -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, .6)), to(transparent));
+  padding-top: 50px;
 }
 
 body {
@@ -17,12 +22,30 @@ body {
 
 
 .sav-title h3 {
-  position: absolute;
-    width: 90%;
     text-align: center;
     color: rgb(255, 255, 255);
-    top: 40%;
-    margin-bottom: 20px
+    position: absolute;
+    top:  47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top:  70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.link {
+  text-decoration: none;
+  color: #ffffff;
+  margin-top: 50px;
 }
 
 
@@ -34,22 +57,12 @@ body {
   .btn {
     background-color: rgb(253, 202, 210);
     color: rgb(0, 0, 0);
-    box-shadow    : 4px 4px #666666;  
     border-radius: 100vh;
   }
 
   .btn:hover {
-    box-shadow    : none;        /* カーソル時の影消去 */
-  }
-
-
-  .nav-link1 a {
-    color: #ffffff;
-    font-size: 2rem;
-  }
-
-  .nav-link2 a {
-    color: #ffffff;
+    box-shadow: none;
+    transform: translateY(5px);
   }
 
   .btn1 {
@@ -61,14 +74,62 @@ body {
     background-color: rgb(250, 0, 0);
     color: black;
   }
+
   .custom-image {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
   }
   
+  .nav-link {
+    color: rgb(255, 255, 255);
+  }
+
+
+
   .navbar-brand {
     color: rgba(239, 232, 62, 1);
     font-family: cursive;
+    font-size: 20px;
+  }
+
+
+  .stars {
+    position: relative;
+    width: 100%; /* 星空の横幅 */
+    height: 110vh; /* 星空の縦幅 */
+    background-image: linear-gradient(0deg, #d63434, #810000, #080f1c); /* 星空の背景色 */
+    overflow: hidden; /* 星が枠外にはみ出すのを防ぐ */
   }
   
+  /* 星のスタイル */
+  .star {
+    position: absolute;
+    display: block;
+    background-color: #fff; /* 星の色 */
+    border-radius: 50%;
+    box-shadow: 0 0 4px 2px rgba(#fff, 0.2); /* 星の影 */
+    opacity: 0;
+    animation: twinkle 5s infinite;
+  }
   
+  /* 星がキラキラ光るアニメーション */
+  @keyframes twinkle {
+    0% {
+      opacity: 0;
+    }
+  
+    50% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+      transform: scale(1);
+    }
+  }
+
+/* ハンバーガーメニューボタンをクリックした際のアクティブなスタイル */
+.custom-toggler.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  background-color: rgb(0, 98, 255); /* クリックした時の色を指定 */
+}

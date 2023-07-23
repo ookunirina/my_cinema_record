@@ -1,31 +1,23 @@
-<div class="col-sm-12 col-lg-4 mb-3">
+<div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 mb-5">
   <div id="movierecord-id-<%= movierecord.id %>">
-    <div class="card">
-      <%= image_tag movierecord.image_url_url , class: 'card-img-top', size: '300x200' %>
+    <div class="card p-2 mx-3">
+      <%= image_tag movierecord.image_url_url, class: 'card-img-top'%>
       <div class="card-body">
-        <h4 class="card-title">
+        <h5 class="card-title">
           <%= link_to movierecord.title, movierecord_path(movierecord)  %>
-        </h4>
-        <ul class="list-inline">
-          <li class="list-inline-item">
-          </li>
+        </h5>
         <div>
-        <p>総合評価：
-        <span class="star-rating">
-         <span class="star-rating-front" style="width: <%= getPercent(movierecord.star) %>%;">★★★★★</span>
-         <span class="star-rating-back">★★★★★</span>
-        </span> 
-        </p> 
-        </div>
-        <li>
+        総合評価：
+        <div class="star-rating">
+        <div class="star-rating-front" style="width: <%= getPercent(movierecord.star) %>%;">★★★★★</div>
+        <div class="star-rating-back">★★★★★</div>
+       </div> 
+       </div>
             <% movierecord.tags.each do |tag| %>
               <%= link_to tag.name, tag_movierecords_path(tag_id: tag.id), class: "badge rounded-pill bg-warning text-dark" %>
             <% end %>
         <ul class="list-inline">
           <li class="list-inline-item">
-          </li>
-          <li class="list-inline-item">
-            <%= icon 'far', 'calendar' %>
             <%= l movierecord.created_at, format: :long %>
           </li>
         </ul>
