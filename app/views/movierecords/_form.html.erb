@@ -9,7 +9,7 @@
       <%= f.file_field :image_url, class: 'form-control mb-3', accept: 'image/*' %>
       <%= f.hidden_field :image_url_cache %>
     </div>
-    <div class='mt-3 mb-3'>
+    <div class='mt-3 mb-3 image-urlcontainer'>
     <%= image_tag movierecord.image_url.url,
                   id: 'preview',
                   size: '300x200' %>
