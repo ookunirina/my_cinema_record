@@ -1,0 +1,37 @@
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+  /* 名前フィールドのラベルのテキスト色を変更 */
+.form-group label[for="user_name"] {
+    color: rgb(255, 255, 255);
+}
+
+  /* メールアドレスフィールドのラベルのテキスト色を変更 */
+.form-group label[for="user_email"] {
+    color: rgb(242, 242, 242);
+}
+
+  /* パスワードフィールドのラベルのテキスト色を変更 */
+.form-group label[for="user_password"] {
+    color: rgb(255, 255, 255);
+}
+
+/* パスワード確認フィールドのラベルのテキスト色を変更 */
+.form-group label[for="user_password_confirmation"] {
+    color: rgb(251, 251, 251);
+}
+
+.label-email,
+.label-password {
+  color: rgb(255, 255, 255);
+}
+
+.form-group label {
+    color: #ffffff; /* 好みの文字色に#ff0000を置き換えてください */
+  }
+  
+  /* h5の文字色を変える */
+  h5 {
+    color: #ffffff; /* 好みの文字色に#00ff00を置き換えてください */
+  }
