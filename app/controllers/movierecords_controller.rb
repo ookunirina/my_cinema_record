@@ -3,8 +3,8 @@ class MovierecordsController < ApplicationController
 
   def index
     @tag_list = Tag.all
-    @movierecords = Movierecord.all.includes(:user).order(created_at: :desc)
-    #@movierecords = Movierecord.where.not(user_id: current_user.id).includes(:user).order(created_at: :desc) ユーザー以外のみ表示
+    @q = Movierecord.ransack(params[:q])
+    @movierecords = @q.result(distinct: true).includes(:user).order(created_at: :desc)
   end
 
   def new
@@ -52,6 +52,12 @@ class MovierecordsController < ApplicationController
 
   def likes
     @like_movierecords = current_user.like_movierecords.includes(:user).order(created_at: :desc)
+  end
+
+  def search
+    @tag_list = Tag.all
+    @tag = Tag.find(params[:tag_id])
+    @movierecords = @tag.movierecords.all
   end
 
   private

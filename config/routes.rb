@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   end
 
   resources :tags do
-    get 'movierecords'
+    get 'movierecords', to: 'movierecords#search'
   end
 
   resources :likes, only: %i[create destroy]
