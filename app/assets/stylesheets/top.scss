@@ -84,6 +84,15 @@ body {
     color: rgb(255, 255, 255);
   }
 
+  /* 映画の記録を作成するタイトルlink */
+  .custom-large-text {
+    font-size: 30px; 
+    text-shadow:
+    -1px -1px 0 rgb(0, 0, 0), /* 左上に1pxずつずらして黒色の縁取りを作成 */
+    1px -1px 0 rgb(255, 247, 0),
+    -1px 1px 0 rgb(0, 0, 0),
+    1px 1px 0 rgb(255, 247, 0);
+  }
 
 
   .navbar-brand {
