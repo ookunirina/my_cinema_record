@@ -5,9 +5,11 @@ ja:
     register: '登録！'
     logout: 'ログアウト'
     movierecord: '記録する'
-    back: '戻る'
+    mtback: '映画の記録一覧に戻る'
     topback: 'トップページに戻る'
+    back: '戻る'
     edit: '編集'
+    search_word: '映画タイトルを入力して下さい'
     message:
       require_login: 'ログインしてください'
       updated: '更新しました'
