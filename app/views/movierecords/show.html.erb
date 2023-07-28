@@ -24,11 +24,15 @@
               <a>感想</a>
               <%= simple_format (@movierecord.review) %>
               </div>
+              <% @movierecord.tags.each do |tag| %>
+                <%= link_to tag.name, tag_movierecords_path(tag_id: tag.id), class: "badge rounded-pill bg-warning text-dark" %>
+              <% end %>
               <ul class="list-inline">
                 <li class="list-inline-item">by <%= @movierecord.user.name %></li>
                 <li class="list-inline-item"><%= l @movierecord.created_at, format: :long  %></li>
               </ul>
                 <% if current_user.own?(@movierecord) %>
+                  <%= render 'twitter', movierecord: @movierecord  %>
                   <%= render 'crud_menus', movierecord: @movierecord %>
                 <% else %>
                   <%= render 'like_button', movierecord: @movierecord %>
@@ -37,5 +41,8 @@
           </div>
         </div>
       </article>
+      <div>
+    <%= link_to t('defaults.mtback'), movierecords_path, class: 'navbar-brand' %>
+    </div>
     </div>
   </div>
