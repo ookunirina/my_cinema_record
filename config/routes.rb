@@ -14,12 +14,12 @@ Rails.application.routes.draw do
     collection do
       get :likes
     end
+    resources :likes, only: %i[create destroy]
   end
 
   resources :tags do
     get 'movierecords', to: 'movierecords#search'
   end
 
-  resources :likes, only: %i[create destroy]
   resource :profile, only: %i[show edit update]
 end
