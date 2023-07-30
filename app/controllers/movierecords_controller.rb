@@ -51,7 +51,8 @@ class MovierecordsController < ApplicationController
   end
 
   def likes
-    @like_movierecords = current_user.like_movierecords.includes(:user).order(created_at: :desc)
+    @q = current_user.like_movierecords.ransack(params[:q])
+    @like_movierecords = @q.result(distinct: true).includes(:user).order(created_at: :desc)
   end
 
   def search
