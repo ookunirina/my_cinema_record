@@ -1,4 +1,0 @@
-<%= link_to like_path(current_user.likes.find_by(movierecord_id: movierecord.id)), id: "js-like-button-for-movierecord-#{movierecord.id}", class:"float-right", method: :delete, remote: true do %>
-  <i class="fa-solid fa-thumbs-up" style="color: #f4be9b;"></i>
-  <%= movierecord.likes.count %>
-<% end %>

@@ -1,11 +1,27 @@
 class LikesController < ApplicationController
+  before_action :find_movierecord
+
   def create
-    @movierecord = Movierecord.find(params[:movierecord_id])
-    current_user.like(@movierecord)
+    @like = @movierecord.likes.new(user_id: current_user.id)
+    if @like.save
+      redirect_to @movierecord
+    else
+      redirect_to @movierecord
+    end
   end
 
   def destroy
-    @movierecord = current_user.likes.find(params[:id]).movierecord
-    current_user.unlike(@movierecord)
+    if @movierecord.present?
+      @like = @movierecord.likes.find_by(user_id: current_user.id)
+      if @like&.destroy
+        redirect_to @movierecord
+      end
+    end
+  end
+
+  private
+
+  def find_movierecord
+    @movierecord = Movierecord.find(params[:movierecord_id])
   end
 end
