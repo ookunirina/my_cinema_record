@@ -11,7 +11,10 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.0].define(version: 2023_07_17_111016) do
-  create_table "likes", charset: "utf8mb4", force: :cascade do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "likes", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "movierecord_id", null: false
     t.datetime "created_at", null: false
@@ -21,7 +24,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_17_111016) do
     t.index ["user_id"], name: "index_likes_on_user_id"
   end
 
-  create_table "movierecord_tags", charset: "utf8mb4", force: :cascade do |t|
+  create_table "movierecord_tags", force: :cascade do |t|
     t.bigint "movierecord_id", null: false
     t.bigint "tag_id", null: false
     t.datetime "created_at", null: false
@@ -31,7 +34,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_17_111016) do
     t.index ["tag_id"], name: "index_movierecord_tags_on_tag_id"
   end
 
-  create_table "movierecords", charset: "utf8mb4", force: :cascade do |t|
+  create_table "movierecords", force: :cascade do |t|
     t.string "title", null: false
     t.string "image_url"
     t.string "genre", null: false
@@ -43,14 +46,14 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_17_111016) do
     t.index ["user_id"], name: "index_movierecords_on_user_id"
   end
 
-  create_table "tags", charset: "utf8mb4", force: :cascade do |t|
+  create_table "tags", force: :cascade do |t|
     t.string "name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["name"], name: "index_tags_on_name", unique: true
   end
 
-  create_table "users", charset: "utf8mb4", force: :cascade do |t|
+  create_table "users", force: :cascade do |t|
     t.string "name", null: false
     t.string "email", null: false
     t.string "avatar"

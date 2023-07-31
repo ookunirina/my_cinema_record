@@ -50,3 +50,4 @@ production:
   database: my_cinema_record_production
   username: my_cinema_record
   password: <%= ENV["MY_CINEMA_RECORD_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
