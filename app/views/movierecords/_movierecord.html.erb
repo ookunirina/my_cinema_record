@@ -13,9 +13,6 @@
         <div class="star-rating-back">★★★★★</div>
        </div> 
        </div>
-            <% movierecord.tags.each do |tag| %>
-              <%= link_to tag.name, tag_movierecords_path(tag_id: tag.id), class: "badge rounded-pill bg-warning text-dark" %>
-            <% end %>
         <ul class="list-inline">
           <li class="list-inline-item">
             <%= l movierecord.created_at, format: :long %>
