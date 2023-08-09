@@ -21,5 +21,6 @@ Rails.application.routes.draw do
     get 'movierecords', to: 'movierecords#search'
   end
 
+  resources :rankings, only: :index
   resource :profile, only: %i[show edit update]
 end
