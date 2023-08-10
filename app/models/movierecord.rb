@@ -10,7 +10,7 @@ class Movierecord < ApplicationRecord
   mount_uploader :image_url, ImageUrlUploader
 
   validates :title, presence: true, length: { maximum: 100 }
-  validates :genre, presence: true
+  validates :viewing_style, presence: true
   validates :review, length: { maximum: 65_535 }
 
   def save_with_tags(tag_names:)

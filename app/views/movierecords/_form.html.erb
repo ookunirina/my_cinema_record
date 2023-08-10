@@ -15,9 +15,15 @@
                   size: '300x200' %>
     </div>
     <div class="form-group">
-      <%= f.label :genre %>
-      <%= f.text_field :genre, class: 'form-control' %>
-    </div>
+    <%= f.label :viewing_style %>
+    <br>
+    <%= f.radio_button :viewing_style, "映画館" %>
+    <%= f.label :viewing_style_映画館, "映画館" %>
+    <%= f.radio_button :viewing_style, "動画配信サイト" %>
+    <%= f.label :viewing_style_動画配信サイト, "動画配信サイト" %>
+    <%= f.radio_button :viewing_style, "DVDorBlu-ray" %>
+    <%= f.label :viewing_style_DVDorブルーレイ, "DVDorBlu-ray" %>
+  </div>
     <div class="form-group">
       <%= f.label :tag %>
       <span class="badge text-bg-danger">同じ名前のタグは、一つまで</span>
@@ -27,16 +33,12 @@
     <div class="movierecord_form">
      <%= f.radio_button :star, 5 ,id: 'star1'%>
      <label for="star1"><span class="text">最高</span>★</label>
-
      <%= f.radio_button :star, 4 ,id: 'star2'%>
      <label for="star2"><span class="text">良い</span>★</label>
-
      <%= f.radio_button :star, 3 ,id: 'star3'%>
      <label for="star3"><span class="text">普通</span>★</label>
-
      <%= f.radio_button :star, 2 ,id: 'star4'%>
      <label for="star4"><span class="text">悪い</span>★</label>
-
      <%= f.radio_button :star, 1 ,id: 'star5'%>
      <label for="star5"><span class="text">最悪</span>★</label>
     </div>
