@@ -11,7 +11,7 @@ ja:
         avatar: 'アバター'
       movierecord:
         title: '映画のタイトル'
-        genre: 'ジャンル'
+        viewing_style: '視聴方法'
         star: '星評価'
         tag: 'タグ'
         image_url: '写真'

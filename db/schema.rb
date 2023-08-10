@@ -37,7 +37,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_17_111016) do
   create_table "movierecords", force: :cascade do |t|
     t.string "title", null: false
     t.string "image_url"
-    t.string "genre", null: false
+    t.string "viewing_style", null: false
     t.integer "star"
     t.text "review", null: false
     t.bigint "user_id", null: false
