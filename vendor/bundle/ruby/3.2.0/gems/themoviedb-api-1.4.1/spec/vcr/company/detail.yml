@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/company/1?api_key=c29379565234e20d7cbf4f2e835c3e41&language=en
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin21 x86_64) ruby/2.7.7p221
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.themoviedb.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 26 Nov 2022 18:52:48 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=28800
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - a062617cd033159d3f221f6d64ff121049e095ff
+      X-Memc-Age:
+      - '6609'
+      X-Memc-Expires:
+      - '8794'
+      Etag:
+      - W/"922bfddc1ba3b8d6ec7e6437448a7715"
+      Vary:
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 33aac7e2ef0fc5fd970dd566811ad242.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAD53-P2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - wZsA_6SR_7Z_Op2AwAepjhoCN8TFqWYtLjIQttLLHWuAj0tBtIkdKw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"description":"","headquarters":"San Francisco, California","homepage":"https://www.lucasfilm.com","id":1,"logo_path":"/o86DbpburjxrqAzEDhXZcyE8pDb.png","name":"Lucasfilm
+        Ltd.","origin_country":"US","parent_company":null}'
+  recorded_at: Sat, 26 Nov 2022 18:52:48 GMT
+recorded_with: VCR 6.1.0

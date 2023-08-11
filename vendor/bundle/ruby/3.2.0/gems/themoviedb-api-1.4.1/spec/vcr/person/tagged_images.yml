@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/person/287/tagged_images?api_key=c29379565234e20d7cbf4f2e835c3e41&language=en
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin21 x86_64) ruby/2.7.7p221
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.themoviedb.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 26 Nov 2022 18:52:58 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=28800
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - e3430cd3d9a6d4ebe65d17a91c510c54d4ff2c84
+      X-Memc-Age:
+      - '10072'
+      X-Memc-Expires:
+      - '7483'
+      Etag:
+      - W/"1fbfd2f354f32a85c34b1a71d98d5638"
+      Vary:
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 960af9a3cf2be471cec245e0d929cbee.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAD53-P2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - HZUbQT2pLRqiha4DuuLO0E4MoPgFrqRYp6kzRy-QUKLXumOBGlwjag==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":287,"page":1,"results":[{"aspect_ratio":0.6666666666666666,"file_path":"/heaz45kpFa4Oa7iLis0OBas68ls.jpg","height":3000,"id":"5e4e1d749a3c490016368f41","iso_639_1":"en","vote_average":5.702,"vote_count":11,"width":2000,"image_type":"poster","media":{"adult":false,"backdrop_path":"/ew01hAIruWHq9I1nt3FNP7wOxTR.jpg","id":64689,"title":"Killing
+        Them Softly","original_language":"en","original_title":"Killing Them Softly","overview":"Jackie
+        Cogan is an enforcer hired to restore order after three dumb guys rob a Mob
+        protected card game, causing the local criminal economy to collapse.","poster_path":"/heaz45kpFa4Oa7iLis0OBas68ls.jpg","media_type":"movie","genre_ids":[80,53],"popularity":13.362,"release_date":"2012-07-30","video":false,"vote_average":6.026,"vote_count":1790},"media_type":"movie"},{"aspect_ratio":0.6666666666666666,"file_path":"/yAq2qTnDsBZJ9M51UXoBISNbGa6.jpg","height":3000,"id":"636ff03199259c00cd1fc164","iso_639_1":"it","vote_average":0.0,"vote_count":0,"width":2000,"image_type":"poster","media":{"adult":false,"backdrop_path":"/geLwd5Qzg5wiBVJXMPrnAE10ty3.jpg","id":10909,"title":"Kalifornia","original_language":"en","original_title":"Kalifornia","overview":"A
+        journalist duo go on a tour of serial killer murder sites with two companions,
+        unaware that one of them is a serial killer himself.","poster_path":"/4E39RrmgXspAqGro2poDEdjvAnh.jpg","media_type":"movie","genre_ids":[53,80],"popularity":15.777,"release_date":"1993-06-24","video":false,"vote_average":6.533,"vote_count":627},"media_type":"movie"}],"total_pages":1,"total_results":2}'
+  recorded_at: Sat, 26 Nov 2022 18:52:58 GMT
+recorded_with: VCR 6.1.0

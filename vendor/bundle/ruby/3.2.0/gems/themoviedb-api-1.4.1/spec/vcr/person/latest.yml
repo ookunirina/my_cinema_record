@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/person/latest?api_key=c29379565234e20d7cbf4f2e835c3e41&language=en
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin21 x86_64) ruby/2.7.7p221
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.themoviedb.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 26 Nov 2022 18:52:59 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=0
+      X-Memc:
+      - MISS
+      X-Memc-Key:
+      - b866ddd0da14cb6876ea5ab1cd5f40f85e623f38
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '0'
+      Etag:
+      - W/"c7c51a7dfcb4c027abe5b64ab1a591d6"
+      Vary:
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 04c0d9b23685055107b7127f92f41e4c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAD53-P2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - chpZEg2uy_4TE-HJhTCi1AqLMGLzkBKIT6cEASVPyD8b4VMZggxLvw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"adult":false,"also_known_as":[],"biography":"","birthday":null,"deathday":null,"gender":0,"homepage":null,"id":3803743,"imdb_id":null,"known_for_department":"Acting","name":"Maria
+        Wiens","place_of_birth":null,"popularity":0.0,"profile_path":null}'
+  recorded_at: Sat, 26 Nov 2022 18:52:59 GMT
+recorded_with: VCR 6.1.0

@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/tv/1396/content_ratings?api_key=c29379565234e20d7cbf4f2e835c3e41&language=en
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin21 x86_64) ruby/2.7.7p221
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.themoviedb.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 26 Nov 2022 18:52:40 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=28800
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - 77757996bb4718d702dd96de01d554703df0aba2
+      X-Memc-Age:
+      - '7242'
+      X-Memc-Expires:
+      - '10115'
+      Etag:
+      - W/"e9f2c356efd1675bb5241fc8dd34baec"
+      Vary:
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 27b6689b1a55964bce73c502075b687c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAD53-P2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - cJ0sONvHIBSiSpYgmg-WT-FCP7kRs4KAdMX_sVJA26XxLwdtrKTvhQ==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"iso_3166_1":"DE","rating":"16"},{"iso_3166_1":"GB","rating":"18"},{"iso_3166_1":"AU","rating":"MA15+"},{"iso_3166_1":"US","rating":"TV-MA"},{"iso_3166_1":"FR","rating":"12"},{"iso_3166_1":"RU","rating":"18+"},{"iso_3166_1":"KR","rating":"19"},{"iso_3166_1":"BR","rating":"18"},{"iso_3166_1":"NL","rating":"16"},{"iso_3166_1":"PT","rating":"18"},{"iso_3166_1":"HU","rating":"18"},{"iso_3166_1":"LT","rating":"N-14"},{"iso_3166_1":"ES","rating":"16"}],"id":1396}'
+  recorded_at: Sat, 26 Nov 2022 18:52:40 GMT
+recorded_with: VCR 6.1.0

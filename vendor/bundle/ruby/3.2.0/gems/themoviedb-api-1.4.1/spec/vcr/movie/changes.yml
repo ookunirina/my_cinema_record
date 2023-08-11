@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/movie/550/changes?api_key=c29379565234e20d7cbf4f2e835c3e41&end_date=2015-06-26&language=en&start_date=2015-06-20
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin21 x86_64) ruby/2.7.7p221
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.themoviedb.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 26 Nov 2022 18:52:55 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=28800
+      X-Memc:
+      - MISS, STORE
+      X-Memc-Key:
+      - 159539f0ac80a4cd4e3467700a13893f80986c40
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '300'
+      Etag:
+      - W/"8eba03c48c352ef8b6f3738330ef07db"
+      Vary:
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 27b6689b1a55964bce73c502075b687c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAD53-P2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - BQz1SZmB8OvyUagvaDYb4LthwlhJglI7dxw8RV6liZXnK-z4ocFk0Q==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"changes":[{"key":"images","items":[{"id":"558ab78cc3a36869f2001e32","action":"updated","time":"2015-06-24
+        13:58:36 UTC","iso_639_1":"fr","value":{"poster":{"file_path":"/tYnygTSBvN4rxypuJ9S9JjUGqMX.jpg","iso_639_1":"fr"}},"original_value":{"poster":{"file_path":"/tYnygTSBvN4rxypuJ9S9JjUGqMX.jpg","iso_639_1":"en"}}}]}]}'
+  recorded_at: Sat, 26 Nov 2022 18:52:55 GMT
+recorded_with: VCR 6.1.0

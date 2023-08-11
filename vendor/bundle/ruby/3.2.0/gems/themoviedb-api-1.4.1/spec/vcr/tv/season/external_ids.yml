@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/tv/3572/season/1/external_ids?api_key=c29379565234e20d7cbf4f2e835c3e41&language=en
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin21 x86_64) ruby/2.7.7p221
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.themoviedb.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 26 Nov 2022 18:53:03 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=28800
+      X-Memc:
+      - MISS, STORE
+      X-Memc-Key:
+      - 15024aae95fd9043a5765607bddc36b680a0337f
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '16333'
+      Etag:
+      - W/"b8658d59084a27f110878e68d36b993d"
+      Vary:
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 2ccbc5caee1698bce379c0e885350056.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAD53-P2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - DdsNMuIujOpQqsJ1ch7KmqY8IH44rTjNZGOdxbI2bQnlhWduWiwOEw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":10838,"freebase_mid":"/m/05ddtqw","freebase_id":"/en/kojak_season_1","tvdb_id":2547,"tvrage_id":null,"wikidata_id":null}'
+  recorded_at: Sat, 26 Nov 2022 18:53:03 GMT
+recorded_with: VCR 6.1.0

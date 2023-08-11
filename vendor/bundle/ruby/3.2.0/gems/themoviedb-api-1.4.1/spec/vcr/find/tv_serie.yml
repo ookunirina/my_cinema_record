@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/find/tt3749900?api_key=c29379565234e20d7cbf4f2e835c3e41&external_source=imdb_id&language=en
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin21 x86_64) ruby/2.7.7p221
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.themoviedb.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 26 Nov 2022 18:52:50 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=28800
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - f3fe4fdcfac0dc6f4b85b6b3923c1e7658b03920
+      X-Memc-Age:
+      - '1016'
+      X-Memc-Expires:
+      - '20584'
+      Etag:
+      - W/"0a599d7c01a5ff33692925f84ab1bc18"
+      Vary:
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 f2727c44c4de3e46c8cb9f7afb6c780e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAD53-P2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - W6n85fs2o1zX_51_w0_cnaFXXwgvvA0oy9QqwbHWUduAKsy63TLy4w==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJtb3ZpZV9yZXN1bHRzIjpbXSwicGVyc29uX3Jlc3VsdHMiOltdLCJ0dl9yZXN1bHRzIjpbeyJhZHVsdCI6ZmFsc2UsImJhY2tkcm9wX3BhdGgiOiIvN1FTTTNBc2dXWGN0V0JtN09Gb3Y5ZEdkWmd0LmpwZyIsImlkIjo2MDcwOCwibmFtZSI6IkdvdGhhbSIsIm9yaWdpbmFsX2xhbmd1YWdlIjoiZW4iLCJvcmlnaW5hbF9uYW1lIjoiR290aGFtIiwib3ZlcnZpZXciOiJFdmVyeW9uZSBrbm93cyB0aGUgbmFtZSBDb21taXNzaW9uZXIgR29yZG9uLiBIZSBpcyBvbmUgb2YgdGhlIGNyaW1lIHdvcmxkJ3MgZ3JlYXRlc3QgZm9lcywgYSBtYW4gd2hvc2UgcmVwdXRhdGlvbiBpcyBzeW5vbnltb3VzIHdpdGggbGF3IGFuZCBvcmRlci4gQnV0IHdoYXQgaXMga25vd24gb2YgR29yZG9uJ3Mgc3RvcnkgYW5kIGhpcyByaXNlIGZyb20gcm9va2llIGRldGVjdGl2ZSB0byBQb2xpY2UgQ29tbWlzc2lvbmVyPyBXaGF0IGRpZCBpdCB0YWtlIHRvIG5hdmlnYXRlIHRoZSBtdWx0aXBsZSBsYXllcnMgb2YgY29ycnVwdGlvbiB0aGF0IHNlY3JldGx5IHJ1bGVkIEdvdGhhbSBDaXR5LCB0aGUgc3Bhd25pbmcgZ3JvdW5kIG9mIHRoZSB3b3JsZCdzIG1vc3QgaWNvbmljIHZpbGxhaW5zPyBBbmQgd2hhdCBjaXJjdW1zdGFuY2VzIGNyZWF0ZWQgdGhlbSDigJMgdGhlIGxhcmdlci10aGFuLWxpZmUgcGVyc29uYXMgd2hvIHdvdWxkIGJlY29tZSBDYXR3b21hbiwgVGhlIFBlbmd1aW4sIFRoZSBSaWRkbGVyLCBUd28tRmFjZSBhbmQgVGhlIEpva2VyPyIsInBvc3Rlcl9wYXRoIjoiLzRYZGRjUkR0bk5qWW1MUk1ZcGJyaEZ4c2J1cS5qcGciLCJtZWRpYV90eXBlIjoidHYiLCJnZW5yZV9pZHMiOlsxOCw4MCwxMDc2NV0sInBvcHVsYXJpdHkiOjEzNy41MTYsImZpcnN0X2Fpcl9kYXRlIjoiMjAxNC0wOS0yMiIsInZvdGVfYXZlcmFnZSI6Ny42MTIsInZvdGVfY291bnQiOjI5MzcsIm9yaWdpbl9jb3VudHJ5IjpbIlVTIl19XSwidHZfZXBpc29kZV9yZXN1bHRzIjpbXSwidHZfc2Vhc29uX3Jlc3VsdHMiOltdfQ==
+  recorded_at: Sat, 26 Nov 2022 18:52:50 GMT
+recorded_with: VCR 6.1.0

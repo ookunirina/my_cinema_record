@@ -1,0 +1,20 @@
+current directory: /Users/ookuniosamusai/workspace/runteq/my_cinema_record/vendor/bundle/ruby/3.2.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+/Users/ookuniosamusai/.rbenv/versions/3.2.2/bin/ruby extconf.rb
+checking for -lstdc++... yes
+creating Makefile
+
+current directory: /Users/ookuniosamusai/workspace/runteq/my_cinema_record/vendor/bundle/ruby/3.2.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+make DESTDIR\= sitearchdir\=./.gem.20230801-2575-a372u4 sitelibdir\=./.gem.20230801-2575-a372u4 clean
+
+current directory: /Users/ookuniosamusai/workspace/runteq/my_cinema_record/vendor/bundle/ruby/3.2.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+make DESTDIR\= sitearchdir\=./.gem.20230801-2575-a372u4 sitelibdir\=./.gem.20230801-2575-a372u4
+compiling unf.cc
+linking shared-object unf_ext.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/ookuniosamusai/workspace/runteq/my_cinema_record/vendor/bundle/ruby/3.2.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+make DESTDIR\= sitearchdir\=./.gem.20230801-2575-a372u4 sitelibdir\=./.gem.20230801-2575-a372u4 install
+/usr/bin/install -c -m 0755 unf_ext.bundle ./.gem.20230801-2575-a372u4
+
+current directory: /Users/ookuniosamusai/workspace/runteq/my_cinema_record/vendor/bundle/ruby/3.2.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+make DESTDIR\= sitearchdir\=./.gem.20230801-2575-a372u4 sitelibdir\=./.gem.20230801-2575-a372u4 clean

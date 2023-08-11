@@ -1,0 +1,83 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/search/person?api_key=c29379565234e20d7cbf4f2e835c3e41&language=en&query=Julian%20Beck
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin21 x86_64) ruby/2.7.7p221
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.themoviedb.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 26 Nov 2022 18:53:01 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=600
+      Vary:
+      - Accept-Encoding,Accept-Encoding
+      - Origin
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 48d20e4a7c48c095731e8e5968bc64a0.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAD53-P2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - G4vk5SZgkQc5nf9IrgpKQFMATVes6HQEGyIXG3gKBikrv8qPDSe3JA==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"page":1,"results":[{"adult":false,"gender":2,"id":130723,"known_for":[{"adult":false,"backdrop_path":"/vWIFVoKBwa5uHnokF6mc4DUfB9O.jpg","genre_ids":[27,53],"id":11133,"media_type":"movie","original_language":"en","original_title":"Poltergeist
+        II: The Other Side","overview":"The Freeling family move in with Diane''s
+        mother in an effort to escape the trauma and aftermath of Carol Anne''s abduction
+        by the Beast. But the Beast is not to be put off so easily and appears in
+        a ghostly apparition as the Reverend Kane, a religeous zealot responsible
+        for the deaths of his many followers. His goal is simple - he wants the angelic
+        Carol Anne.","poster_path":"/n85IZOC8R27TK5T5YaiwCtpvjv7.jpg","release_date":"1986-05-23","title":"Poltergeist
+        II: The Other Side","video":false,"vote_average":6,"vote_count":535},{"adult":false,"backdrop_path":"/cf7jOkeY8tqSnVRzAbdlUKQynhe.jpg","genre_ids":[10749,18],"id":10068,"media_type":"movie","original_language":"en","original_title":"Nine
+        1/2 Weeks","overview":"An erotic story about a woman, the assistant of an
+        art gallery, who gets involved in an impersonal affair with a man. She barely
+        knows about his life, only about the sex games they play, so the relationship
+        begins to get complicated.","poster_path":"/vnTCgupgTMZSGbl1InrO2UhTz9S.jpg","release_date":"1986-02-09","title":"Nine
+        1/2 Weeks","video":false,"vote_average":6.1,"vote_count":787},{"adult":false,"backdrop_path":"/gNSXF2AKz3mTNT9CSWma9gxnwBR.jpg","genre_ids":[18],"id":42691,"media_type":"movie","original_language":"it","original_title":"Edipo
+        re","overview":"In pre-war Italy, a young couple have a baby boy. The father,
+        however, is jealous of his son - and the scene moves to antiquity, where the
+        baby is taken into the desert to be killed. He is rescued, given the name
+        Edipo (Oedipus), and brought up by the King and Queen of Corinth as their
+        son. One day an oracle informs Edipo that he is destined to kill his father
+        and marry his mother. Horrified, he flees Corinth and his supposed parents
+        - only to get into a fight and kill an older man on the road...","poster_path":"/7R3yPlLdiNhpGzasB8SDCT6Kwy.jpg","release_date":"1967-09-07","title":"Oedipus
+        Rex","video":false,"vote_average":6.6,"vote_count":212}],"known_for_department":"Acting","name":"Julian
+        Beck","popularity":6.292,"profile_path":"/8bujAoKVLxTPvggUpDYSGfnKHR4.jpg"},{"adult":false,"gender":0,"id":1941062,"known_for":[{"adult":false,"genre_ids":[18,36],"id":492646,"media_type":"movie","original_language":"en","original_title":"Seven
+        Meditations on Political Sado-Masochism","overview":"A visceral examination
+        of the social contract between the governed and the government, the play explores
+        Leopold von Sacher-Masoch''s Six Houses of Bondage: Love, Money, Property,
+        State, War and Death, with a seventh meditation on Revolutionary Change.\r
+        \"Seven Meditations...\" was created in 1973 by Julian Beck, Judith Malina
+        & Friends.","poster_path":"/bYWEcFHKhcTdHdmnmN4uCnvNN0R.jpg","release_date":"2011-03-27","title":"Seven
+        Meditations on Political Sado-Masochism","video":true,"vote_average":0,"vote_count":0}],"known_for_department":"Writing","name":"Julian
+        Beck","popularity":0.6,"profile_path":null}],"total_pages":1,"total_results":2}'
+  recorded_at: Sat, 26 Nov 2022 18:53:01 GMT
+recorded_with: VCR 6.1.0

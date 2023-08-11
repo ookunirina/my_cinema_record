@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/movie/latest?api_key=c29379565234e20d7cbf4f2e835c3e41&language=en
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin21 x86_64) ruby/2.7.7p221
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.themoviedb.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 26 Nov 2022 18:52:56 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=0
+      X-Memc:
+      - MISS
+      X-Memc-Key:
+      - 0234e16d9ceba555e4d48d3da411687fa7499de3
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '0'
+      Etag:
+      - W/"bf1c8ee00af68e5b80e8f6be5b1e4627"
+      Vary:
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 27b6689b1a55964bce73c502075b687c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAD53-P2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - Z-MxDllRANVm4Wa2IEnJcTYZssQDRXynKoU86tvSZABVN4eFdZhXjA==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJhZHVsdCI6ZmFsc2UsImJhY2tkcm9wX3BhdGgiOm51bGwsImJlbG9uZ3NfdG9fY29sbGVjdGlvbiI6bnVsbCwiYnVkZ2V0IjowLCJnZW5yZXMiOltdLCJob21lcGFnZSI6IiIsImlkIjoxMDUzNzYwLCJpbWRiX2lkIjoidHQyMzc4Njk5MCIsIm9yaWdpbmFsX2xhbmd1YWdlIjoiZnIiLCJvcmlnaW5hbF90aXRsZSI6IkNhbGN1dHRhIDg6NDBhbSIsIm92ZXJ2aWV3IjoiIiwicG9wdWxhcml0eSI6MC4wLCJwb3N0ZXJfcGF0aCI6bnVsbCwicHJvZHVjdGlvbl9jb21wYW5pZXMiOltdLCJwcm9kdWN0aW9uX2NvdW50cmllcyI6W10sInJlbGVhc2VfZGF0ZSI6IiIsInJldmVudWUiOjAsInJ1bnRpbWUiOjAsInNwb2tlbl9sYW5ndWFnZXMiOlt7ImVuZ2xpc2hfbmFtZSI6IkVuZ2xpc2giLCJpc29fNjM5XzEiOiJlbiIsIm5hbWUiOiJFbmdsaXNoIn0seyJlbmdsaXNoX25hbWUiOiJGcmVuY2giLCJpc29fNjM5XzEiOiJmciIsIm5hbWUiOiJGcmFuw6dhaXMifSx7ImVuZ2xpc2hfbmFtZSI6IkhpbmRpIiwiaXNvXzYzOV8xIjoiaGkiLCJuYW1lIjoi4KS54KS/4KSo4KWN4KSm4KWAIn1dLCJzdGF0dXMiOiJSZWxlYXNlZCIsInRhZ2xpbmUiOiIiLCJ0aXRsZSI6IkNhbGN1dHRhIDg6NDBhbSIsInZpZGVvIjpmYWxzZSwidm90ZV9hdmVyYWdlIjowLjAsInZvdGVfY291bnQiOjB9
+  recorded_at: Sat, 26 Nov 2022 18:52:56 GMT
+recorded_with: VCR 6.1.0

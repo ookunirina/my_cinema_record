@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/search/keyword?api_key=c29379565234e20d7cbf4f2e835c3e41&language=en&query=Disney
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin21 x86_64) ruby/2.7.7p221
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.themoviedb.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 26 Nov 2022 18:53:00 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=28800
+      X-Memc:
+      - MISS, STORE
+      X-Memc-Key:
+      - b817de47d712c25616044690cd632ac678b04759
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '21600'
+      Etag:
+      - W/"f95e6342897af99445ac6f605473bbb1"
+      Vary:
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 0e9cf4855658b96ed45badec40998a02.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAD53-P2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - a75uZf5pWwjhR6D5UHNp5sF2Jwdax5Sth4MQQtXk0GA9W2dh_1mVDw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"page":1,"results":[{"name":"disneyland","id":188291},{"name":"walt
+        disney world","id":209265},{"name":"disney junior","id":298380},{"name":"walt
+        disney","id":301306},{"name":"disney channel","id":302262},{"name":"disney
+        xd","id":302263},{"name":"wonderful world of disney","id":302852},{"name":"disney+","id":306017},{"name":"disney","id":307595}],"total_pages":1,"total_results":9}'
+  recorded_at: Sat, 26 Nov 2022 18:53:00 GMT
+recorded_with: VCR 6.1.0
