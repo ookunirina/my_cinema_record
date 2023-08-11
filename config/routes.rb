@@ -22,5 +22,6 @@ Rails.application.routes.draw do
   end
 
   resources :rankings, only: :index
+  resource :movies, only: %i[search show]
   resource :profile, only: %i[show edit update]
 end
