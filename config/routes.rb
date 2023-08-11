@@ -8,7 +8,9 @@ Rails.application.routes.draw do
   root 'top#index'
   get 'movie_information/index'
   get 'movie_information', to: 'movie_information#index'
-
+  
+  get 'movies/search', to: 'movies#search'
+  
   resources :users, only: %i[new create]
   resources :movierecords do
     collection do
@@ -22,6 +24,5 @@ Rails.application.routes.draw do
   end
 
   resources :rankings, only: :index
-  resource :movies, only: %i[search show]
   resource :profile, only: %i[show edit update]
 end
