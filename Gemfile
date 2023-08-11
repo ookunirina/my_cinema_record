@@ -58,8 +58,6 @@ gem 'carrierwave'
 gem 'ransack', "~> 3.2.1"
 # translation
 gem 'rails-i18n'
-# 画像投稿
-gem 'carrierwave'
 
 #ogp
 gem "meta-tags"
