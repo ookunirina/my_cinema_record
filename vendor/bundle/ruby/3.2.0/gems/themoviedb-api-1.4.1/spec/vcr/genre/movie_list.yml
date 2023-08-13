@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/genre/movie/list?api_key=c29379565234e20d7cbf4f2e835c3e41&language=en
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin21 x86_64) ruby/2.7.7p221
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.themoviedb.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 26 Nov 2022 18:52:51 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=28800
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - e5414747c88543563407c3391459f9ad45086682
+      X-Memc-Age:
+      - '2411'
+      X-Memc-Expires:
+      - '12426'
+      Etag:
+      - W/"98d6f4fb3a0e0c77544a7277f32baebb"
+      Vary:
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 3188de0255f489b4cf0b9cf9ad1f8238.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAD53-P2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - JPoGqOV2_hYgMkURR3cWMJSms7GsDm3HW5rjf4rlJRPxQuWqvXMDAQ==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"genres":[{"id":28,"name":"Action"},{"id":12,"name":"Adventure"},{"id":16,"name":"Animation"},{"id":35,"name":"Comedy"},{"id":80,"name":"Crime"},{"id":99,"name":"Documentary"},{"id":18,"name":"Drama"},{"id":10751,"name":"Family"},{"id":14,"name":"Fantasy"},{"id":36,"name":"History"},{"id":27,"name":"Horror"},{"id":10402,"name":"Music"},{"id":9648,"name":"Mystery"},{"id":10749,"name":"Romance"},{"id":878,"name":"Science
+        Fiction"},{"id":10770,"name":"TV Movie"},{"id":53,"name":"Thriller"},{"id":10752,"name":"War"},{"id":37,"name":"Western"}]}'
+  recorded_at: Sat, 26 Nov 2022 18:52:50 GMT
+recorded_with: VCR 6.1.0

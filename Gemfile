@@ -10,7 +10,9 @@ gem "rails", "~> 7.0.4", ">= 7.0.4.3"
 gem "sprockets-rails"
 
 # Use mysql as the database for Active Record
-gem "pg"
+gem "mysql2", "~> 0.5", group: :development
+gem 'pg', group: :production
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
@@ -56,11 +58,15 @@ gem 'carrierwave'
 gem 'ransack', "~> 3.2.1"
 # translation
 gem 'rails-i18n'
-# 画像投稿
-gem 'carrierwave'
 
 #ogp
 gem "meta-tags"
+
+#TMDb API
+gem 'themoviedb-api', '~> 1.4', '>= 1.4.1'
+
+#環境変数
+gem 'dotenv-rails'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

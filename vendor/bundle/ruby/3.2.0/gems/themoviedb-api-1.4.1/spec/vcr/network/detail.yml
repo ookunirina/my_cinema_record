@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/network/1?api_key=c29379565234e20d7cbf4f2e835c3e41&language=en
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin21 x86_64) ruby/2.7.7p221
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.themoviedb.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 26 Nov 2022 18:52:57 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=28800
+      X-Memc:
+      - MISS, STORE
+      X-Memc-Key:
+      - 8e283a1a875304f92273959f983b14ad11d3feae
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '15581'
+      Etag:
+      - W/"28a6fb21c8137817914c92773f411851"
+      Vary:
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 04c0d9b23685055107b7127f92f41e4c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAD53-P2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - kauVhDGZZckt-9RH-5coCD-BVUqoNr8hjvMNwulO4SPw8h05tkJyew==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"headquarters":"Minato, Tokyo Prefecture","homepage":"http://www.fujitv.co.jp","id":1,"logo_path":"/yS5UJjsSdZXML0YikWTYYHLPKhQ.png","name":"Fuji
+        TV","origin_country":"JP"}'
+  recorded_at: Sat, 26 Nov 2022 18:52:57 GMT
+recorded_with: VCR 6.1.0

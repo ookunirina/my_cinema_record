@@ -1,0 +1,28 @@
+<%= stylesheet_link_tag 'movie' %>
+<h2>本日の世界のトレンド映画</h2>
+<% movieinfo = JSON.parse((Tmdb::Movie.popular).to_json) %>
+<% i = 0 %>
+<div class="card-wrapper">
+    <% while i < movieinfo['table']['results'].count %>
+        <div class="card">
+            <div class="card-upperinfo">
+                <%if movieinfo['table']['results'][i]['table']['title'].present?%>
+                <h3><%= movieinfo['table']['results'][i]['table']['title'] %></h3>
+                <%end%>
+
+                <% if movieinfo['table']['results'][i]['table']['release_date'].present? %>
+                    <p class="release-date"><%= movieinfo['table']['results'][i]['table']['release_date'] %></p>
+                <%end%>
+            </div>
+
+            <% if movieinfo['table']['results'][i]['table']['overview'].present? %>
+            <p> <%= movieinfo['table']['results'][i]['table']['overview'] %></p>
+        <%end%>
+            <% if movieinfo['table']['results'][i]['table']['poster_path'].present? %>
+                <p><%= image_tag 'https://image.tmdb.org/t/p/w1280' + movieinfo['table']['results'][i]['table']['poster_path'],class: "card-img" %></p>
+            <%end%>
+        </div>
+
+        <% i += 1%>
+    <%end%>
+</div>

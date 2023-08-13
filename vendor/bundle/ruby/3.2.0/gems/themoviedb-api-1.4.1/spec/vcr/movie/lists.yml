@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/movie/550/lists?api_key=c29379565234e20d7cbf4f2e835c3e41&language=en
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin21 x86_64) ruby/2.7.7p221
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.themoviedb.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 26 Nov 2022 18:52:55 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=0
+      X-Memc:
+      - MISS
+      X-Memc-Key:
+      - 5ce4f08010f3f23f8f383281e6d1dcc4115652d5
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '0'
+      Etag:
+      - W/"dd54f257dde9048f809610f894b9a09d"
+      Vary:
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 4d72b0c593937086d9a41f6c893b7b14.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAD53-P2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - S7TQKP8jFpZFIMjaoHbz-k_uUsi2jvI5xhkPLVTnvvvR4DhMgCw8Sw==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpZCI6NTUwLCJwYWdlIjoxLCJyZXN1bHRzIjpbeyJkZXNjcmlwdGlvbiI6IiIsImZhdm9yaXRlX2NvdW50IjowLCJpZCI6ODIwNDg0MSwiaXRlbV9jb3VudCI6NzU3LCJpc29fNjM5XzEiOiJlbiIsImxpc3RfdHlwZSI6Im1vdmllIiwibmFtZSI6IkRSQU1BUyIsInBvc3Rlcl9wYXRoIjpudWxsfSx7ImRlc2NyaXB0aW9uIjoiIiwiZmF2b3JpdGVfY291bnQiOjAsImlkIjo4MjEwMjk1LCJpdGVtX2NvdW50IjoxMzYsImlzb182MzlfMSI6InRyIiwibGlzdF90eXBlIjoibW92aWUiLCJuYW1lIjoiVHVtIEZpbG1sZXIiLCJwb3N0ZXJfcGF0aCI6bnVsbH0seyJkZXNjcmlwdGlvbiI6Iml6bGVkaWtsZXJpbSIsImZhdm9yaXRlX2NvdW50IjowLCJpZCI6ODE5NDc2NCwiaXRlbV9jb3VudCI6NDc4LCJpc29fNjM5XzEiOiJ0ciIsImxpc3RfdHlwZSI6Im1vdmllIiwibmFtZSI6IkZpbG1sZXIiLCJwb3N0ZXJfcGF0aCI6bnVsbH0seyJkZXNjcmlwdGlvbiI6IlBlbMOtY3VsYXMgcXVlIGhlIHZpc3RvIiwiZmF2b3JpdGVfY291bnQiOjAsImlkIjo4MjA4MDQ1LCJpdGVtX2NvdW50Ijo2NjEsImlzb182MzlfMSI6ImVuIiwibGlzdF90eXBlIjoibW92aWUiLCJuYW1lIjoiUGVsw61jdWxhcyB2aXN0YXMiLCJwb3N0ZXJfcGF0aCI6bnVsbH0seyJkZXNjcmlwdGlvbiI6Ikkgc2VlbiIsImZhdm9yaXRlX2NvdW50IjowLCJpZCI6ODIxMDI1NCwiaXRlbV9jb3VudCI6MzYyLCJpc29fNjM5XzEiOiJlbiIsImxpc3RfdHlwZSI6Im1vdmllIiwibmFtZSI6Ik1vdmllIiwicG9zdGVyX3BhdGgiOm51bGx9LHsiZGVzY3JpcHRpb24iOiJNYXN0ZXIgTGlzdCBJbiBQcm9ncmVzcyIsImZhdm9yaXRlX2NvdW50IjowLCJpZCI6NTExMDgsIml0ZW1fY291bnQiOjk1NjMsImlzb182MzlfMSI6ImVuIiwibGlzdF90eXBlIjoibW92aWUiLCJuYW1lIjoiTXkgTW92aWVzIiwicG9zdGVyX3BhdGgiOm51bGx9LHsiZGVzY3JpcHRpb24iOiIiLCJmYXZvcml0ZV9jb3VudCI6MCwiaWQiOjcwNTQzMDYsIml0ZW1fY291bnQiOjE0NzEsImlzb182MzlfMSI6ImVzIiwibGlzdF90eXBlIjoibW92aWUiLCJuYW1lIjoiUGVsaWN1bGFzIiwicG9zdGVyX3BhdGgiOm51bGx9LHsiZGVzY3JpcHRpb24iOiIiLCJmYXZvcml0ZV9jb3VudCI6MCwiaWQiOjgxNjg1OTcsIml0ZW1fY291bnQiOjEzMjE1LCJpc29fNjM5XzEiOiJlbiIsImxpc3RfdHlwZSI6Im1vdmllIiwibmFtZSI6Im1vdmllcyIsInBvc3Rlcl9wYXRoIjpudWxsfSx7ImRlc2NyaXB0aW9uIjoiSSB3YXRjaCB3YXkgdG9vIG11Y2ggYnV0IG5vdCBldmVyeXRoaW5nIHRpbGwgdGhlIGVuZCIsImZhdm9yaXRlX2NvdW50IjowLCJpZCI6MTQyMDY0LCJpdGVtX2NvdW50IjoyMTMwLCJpc29fNjM5XzEiOiJlbiIsImxpc3RfdHlwZSI6Im1vdmllIiwibmFtZSI6IldhdGNoZWQiLCJwb3N0ZXJfcGF0aCI6bnVsbH0seyJkZXNjcmlwdGlvbiI6IuKclO+4jyBmaW5pc2hlZFxyXG7irIXvuI8gc2VxdWVsICIsImZhdm9yaXRlX2NvdW50IjowLCJpZCI6ODE3NTkwMCwiaXRlbV9jb3VudCI6MjMzLCJpc29fNjM5XzEiOiJlbiIsImxpc3RfdHlwZSI6Im1vdmllIiwibmFtZSI6Ik1vdmllcyIsInBvc3Rlcl9wYXRoIjpudWxsfSx7ImRlc2NyaXB0aW9uIjoiTWVzIGZpbG1zIHN1ciBEVkRzIGV0IEJsdS1SYXkiLCJmYXZvcml0ZV9jb3VudCI6MCwiaWQiOjgyMjE0ODYsIml0ZW1fY291bnQiOjgwMiwiaXNvXzYzOV8xIjoiZnIiLCJsaXN0X3R5cGUiOiJtb3ZpZSIsIm5hbWUiOiJEVkRzIGV0IEJsdS1yYXkgIiwicG9zdGVyX3BhdGgiOm51bGx9LHsiZGVzY3JpcHRpb24iOiIiLCJmYXZvcml0ZV9jb3VudCI6MCwiaWQiOjcwNzIyNDMsIml0ZW1fY291bnQiOjQ1NDgsImlzb182MzlfMSI6Im5sIiwibGlzdF90eXBlIjoibW92aWUiLCJuYW1lIjoiVmVyemFtZWxpbmcgIiwicG9zdGVyX3BhdGgiOm51bGx9LHsiZGVzY3JpcHRpb24iOiIiLCJmYXZvcml0ZV9jb3VudCI6MCwiaWQiOjcwNzU3OTAsIml0ZW1fY291bnQiOjEyNTgsImlzb182MzlfMSI6ImVzIiwibGlzdF90eXBlIjoibW92aWUiLCJuYW1lIjoiQWNjaW9uIiwicG9zdGVyX3BhdGgiOm51bGx9LHsiZGVzY3JpcHRpb24iOiIiLCJmYXZvcml0ZV9jb3VudCI6MCwiaWQiOjgxMzUyLCJpdGVtX2NvdW50Ijo1MTAsImlzb182MzlfMSI6ImVuIiwibGlzdF90eXBlIjoibW92aWUiLCJuYW1lIjoiTXkgTGlzdCIsInBvc3Rlcl9wYXRoIjpudWxsfSx7ImRlc2NyaXB0aW9uIjoiTW92aWUgQ29sbGVjdGlvbiIsImZhdm9yaXRlX2NvdW50IjowLCJpZCI6MjczMSwiaXRlbV9jb3VudCI6MTQ5LCJpc29fNjM5XzEiOiJlbiIsImxpc3RfdHlwZSI6Im1vdmllIiwibmFtZSI6IkJsdS1yYXkiLCJwb3N0ZXJfcGF0aCI6Ii91UDZnSFN4VHNhYUhWMFRKTUFTQ3ltSE1ZMWIuanBnIn0seyJkZXNjcmlwdGlvbiI6IiIsImZhdm9yaXRlX2NvdW50IjowLCJpZCI6NzA2NDczOSwiaXRlbV9jb3VudCI6MzMxLCJpc29fNjM5XzEiOiJzdiIsImxpc3RfdHlwZSI6Im1vdmllIiwibmFtZSI6IlNlZGRhIEZpbG1lciIsInBvc3Rlcl9wYXRoIjpudWxsfSx7ImRlc2NyaXB0aW9uIjoiIiwiZmF2b3JpdGVfY291bnQiOjAsImlkIjo4MjI4MTE0LCJpdGVtX2NvdW50IjoyMSwiaXNvXzYzOV8xIjoiZW4iLCJsaXN0X3R5cGUiOiJtb3ZpZSIsIm5hbWUiOiJUbyBXYXRjaCIsInBvc3Rlcl9wYXRoIjpudWxsfSx7ImRlc2NyaXB0aW9uIjoiIiwiZmF2b3JpdGVfY291bnQiOjAsImlkIjo4MTk1ODA4LCJpdGVtX2NvdW50IjozNzUsImlzb182MzlfMSI6ImVuIiwibGlzdF90eXBlIjoibW92aWUiLCJuYW1lIjoiV2F0Y2hlZCIsInBvc3Rlcl9wYXRoIjpudWxsfSx7ImRlc2NyaXB0aW9uIjoiIiwiZmF2b3JpdGVfY291bnQiOjAsImlkIjo4MjExMTc5LCJpdGVtX2NvdW50IjozMzMsImlzb182MzlfMSI6ImVuIiwibGlzdF90eXBlIjoibW92aWUiLCJuYW1lIjoibXlMaXN0IiwicG9zdGVyX3BhdGgiOm51bGx9LHsiZGVzY3JpcHRpb24iOiIiLCJmYXZvcml0ZV9jb3VudCI6MCwiaWQiOjgyMjUwNTUsIml0ZW1fY291bnQiOjU4LCJpc29fNjM5XzEiOiJlbiIsImxpc3RfdHlwZSI6Im1vdmllIiwibmFtZSI6Ik1vdmllcyIsInBvc3Rlcl9wYXRoIjpudWxsfV0sInRvdGFsX3BhZ2VzIjoxMTIsInRvdGFsX3Jlc3VsdHMiOjIyMzd9
+  recorded_at: Sat, 26 Nov 2022 18:52:55 GMT
+recorded_with: VCR 6.1.0

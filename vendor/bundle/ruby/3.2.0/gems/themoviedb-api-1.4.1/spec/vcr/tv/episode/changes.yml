@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/tv/episode/63065/changes?api_key=c29379565234e20d7cbf4f2e835c3e41&end_date=2015-06-20&language=en&start_date=2015-06-15
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin21 x86_64) ruby/2.7.7p221
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.themoviedb.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 26 Nov 2022 18:53:01 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=28800
+      X-Memc:
+      - MISS, STORE
+      X-Memc-Key:
+      - 5a8323a13a7ac02f724036ebb4956941bd8e3c15
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '300'
+      Etag:
+      - W/"9195db8d91189f50be1e9d53f84aa025"
+      Vary:
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 910ee4d9b7bcfd663f2b41579b2aadc2.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAD53-P2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - xJOx8bmsl6As2EnR8ndPEBC3mclLd2FZSEGgq1-0APEPV-RwC1LnMg==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"changes":[{"key":"name","items":[{"id":"55820667c3a3686fb1000201","action":"added","time":"2015-06-17
+        23:44:39 UTC","iso_639_1":"nl","value":"Fire and Blood"}]},{"key":"overview","items":[{"id":"55820667c3a3686fb1000202","action":"added","time":"2015-06-17
+        23:44:39 UTC","iso_639_1":"nl","value":"Terwijl het tragische nieuws zich
+        doorheen de Zeven Koninkrijken verspreidt, delen Bran en Rickon een profetische
+        droom. Catelyn ondervraagt Jaime over de val van haar zoon en Robbs toekomst
+        neemt een noodlottige wending. Tyrion keert terug naar het zuiden na een verrassende
+        beslissing van zijn vader. Arya neemt een andere identiteit aan om uit King''s
+        Landing te ontsnappen. Sansa wordt geterroriseerd door Joffrey. Aan de Muur
+        wordt Jon gedwongen om te kiezen tussen de Nachtwacht en de familie die hij
+        achterliet. Aan de andere kant van de zee betaalt Dany een vreselijke prijs
+        voor haar liefde. Tegelijk vindt ze nieuwe hoop."}]}]}'
+  recorded_at: Sat, 26 Nov 2022 18:53:01 GMT
+recorded_with: VCR 6.1.0

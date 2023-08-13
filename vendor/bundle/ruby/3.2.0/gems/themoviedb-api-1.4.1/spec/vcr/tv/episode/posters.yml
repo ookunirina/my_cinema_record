@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/tv/1399/season/1/episode/1/images?api_key=c29379565234e20d7cbf4f2e835c3e41&language=en
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin21 x86_64) ruby/2.7.7p221
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.themoviedb.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 26 Nov 2022 18:53:02 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=28800
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - 1e1aa2617a09f0c0a7d0496cf1dd481231384c00
+      X-Memc-Age:
+      - '3796'
+      X-Memc-Expires:
+      - '11863'
+      Etag:
+      - W/"c37f6e05b8632ded3b49333f5d421199"
+      Vary:
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 f7df4873768e8425df14701519134052.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAD53-P2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - mZ-VcrJXmaS8se-RDeRSL-PItmsg4GlITnGRqnakKcYRiEfJYJybXg==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":63056,"stills":[{"aspect_ratio":1.778,"height":1080,"iso_639_1":null,"file_path":"/9hGF3WUkBf7cSjMg0cdMDHJkByd.jpg","vote_average":5.454,"vote_count":3,"width":1920},{"aspect_ratio":1.778,"height":1080,"iso_639_1":null,"file_path":"/xIfvIM7YgkADTrqp23rm3CLaOVQ.jpg","vote_average":5.322,"vote_count":5,"width":1920},{"aspect_ratio":1.778,"height":1080,"iso_639_1":null,"file_path":"/wrGWeW4WKxnaeA8sxJb2T9O6ryo.jpg","vote_average":5.32,"vote_count":7,"width":1920},{"aspect_ratio":1.778,"height":1080,"iso_639_1":null,"file_path":"/qYqCWKoiyR845nUOotJ7rKIXGPM.jpg","vote_average":5.312,"vote_count":1,"width":1920},{"aspect_ratio":1.778,"height":1080,"iso_639_1":null,"file_path":"/pyp0LgtqjgaeXzPMtXKnkuNBugV.jpg","vote_average":5.246,"vote_count":2,"width":1920},{"aspect_ratio":1.778,"height":1080,"iso_639_1":null,"file_path":"/w85NsRYgZQZrICE1kC9q8F2D6wS.jpg","vote_average":5.246,"vote_count":2,"width":1920},{"aspect_ratio":1.778,"height":1080,"iso_639_1":null,"file_path":"/g0OnOaBqSepbA8omNTfYBCl4Sbo.jpg","vote_average":5.246,"vote_count":2,"width":1920},{"aspect_ratio":1.778,"height":1080,"iso_639_1":null,"file_path":"/v3bGMbT5Ik86ERFBfsXFqpiMTFy.jpg","vote_average":5.246,"vote_count":2,"width":1920},{"aspect_ratio":1.778,"height":1080,"iso_639_1":null,"file_path":"/uaSOtAsNrXbKxOVzC31GjYxLRXJ.jpg","vote_average":5.246,"vote_count":2,"width":1920},{"aspect_ratio":1.778,"height":1080,"iso_639_1":null,"file_path":"/gDOWFhBTkuwhLKrFqpd7yhAwxVH.jpg","vote_average":5.246,"vote_count":2,"width":1920},{"aspect_ratio":1.778,"height":1080,"iso_639_1":null,"file_path":"/9o3HXUmWaZq14tIAbBrn7e34NRZ.jpg","vote_average":0.0,"vote_count":0,"width":1920},{"aspect_ratio":1.778,"height":1080,"iso_639_1":null,"file_path":"/wZPID3NddTuH7lBNgsFEiXWB6Bj.jpg","vote_average":0.0,"vote_count":0,"width":1920},{"aspect_ratio":1.778,"height":2160,"iso_639_1":null,"file_path":"/lYQyyPoFpFBWQ9cta2zcfZE1axn.jpg","vote_average":0.0,"vote_count":0,"width":3840},{"aspect_ratio":1.778,"height":2160,"iso_639_1":null,"file_path":"/nDkA929hW9ePdyvNure6Q0fNBWo.jpg","vote_average":0.0,"vote_count":0,"width":3840},{"aspect_ratio":1.778,"height":2160,"iso_639_1":null,"file_path":"/ecDSsfUAgH9VqtdtaDdO2fi5KMF.jpg","vote_average":0.0,"vote_count":0,"width":3840}]}'
+  recorded_at: Sat, 26 Nov 2022 18:53:02 GMT
+recorded_with: VCR 6.1.0

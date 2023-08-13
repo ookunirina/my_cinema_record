@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/tv/1399/changes?api_key=c29379565234e20d7cbf4f2e835c3e41&end_date=2015-06-26&language=en&start_date=2015-06-23
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin21 x86_64) ruby/2.7.7p221
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.themoviedb.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 26 Nov 2022 18:52:40 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=28800
+      X-Memc:
+      - MISS, STORE
+      X-Memc-Key:
+      - c1fc8ef2993714c348d4eec36912bdefe375dc61
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '300'
+      Etag:
+      - W/"6728e67d358d3f79744ca750fe1c87c2"
+      Vary:
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 12d82d6b4aa77bb6c346a86b23a37b5c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAD53-P2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - E8LVVGZzFuWJOaPTJhfcSGcMeTUbHCCXbe0lhEVRqkvk6JRDfZJrDw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"changes":[{"key":"season","items":[{"id":"558ac8ebc3a368136f000053","action":"updated","time":"2015-06-24
+        15:12:43 UTC","value":{"season_id":3628,"season_number":4}},{"id":"558b196e92514141d800010d","action":"updated","time":"2015-06-24
+        20:56:14 UTC","value":{"season_id":62090,"season_number":5}}]}]}'
+  recorded_at: Sat, 26 Nov 2022 18:52:40 GMT
+recorded_with: VCR 6.1.0

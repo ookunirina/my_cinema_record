@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/tv/1399/season/1/episode/1/videos?api_key=c29379565234e20d7cbf4f2e835c3e41&language=en
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin21 x86_64) ruby/2.7.7p221
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.themoviedb.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 26 Nov 2022 18:53:02 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=28800
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - 9a614c150f2cf5cfd7208297b4942d4caba8b8a5
+      X-Memc-Age:
+      - '10790'
+      X-Memc-Expires:
+      - '6300'
+      Etag:
+      - W/"ba53ff949582095725acc3c680abcf93"
+      Vary:
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 f19bce06c16c6defc09946014373b622.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAD53-P2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - 2WjnRdbznrVnTslcaQJaDcP2ZrvUV-_PO11dmHN9oY-7cUIeTXAuyA==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":63056,"results":[]}'
+  recorded_at: Sat, 26 Nov 2022 18:53:02 GMT
+recorded_with: VCR 6.1.0

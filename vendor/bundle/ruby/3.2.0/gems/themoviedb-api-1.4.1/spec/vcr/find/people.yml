@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/find/nm0298350?api_key=c29379565234e20d7cbf4f2e835c3e41&external_source=imdb_id&language=en
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin21 x86_64) ruby/2.7.7p221
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.themoviedb.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 26 Nov 2022 18:52:50 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=28800
+      X-Memc:
+      - MISS, STORE
+      X-Memc-Key:
+      - d0ba56f9a7ff248467e1e504dd7f847ce1142160
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '21600'
+      Etag:
+      - W/"cfa1b517e8e8ecf33ae3b0151f01a1be"
+      Vary:
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 c1214d711b9d87739d1d184e6539edfc.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAD53-P2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - nSFnbNrzWu3M_6x6uFrx10LRJwiQjDOnNFx92oZsuXgFzI8STFk47g==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"movie_results":[],"person_results":[{"adult":false,"id":945599,"name":"Simon
+        Fuller","original_name":"Simon Fuller","media_type":"person","popularity":1.415,"gender":2,"known_for_department":"Creator","profile_path":null,"known_for":[{"adult":false,"backdrop_path":"/jB66SWgijY4bU8J4msxj768U9Qe.jpg","id":3626,"name":"American
+        Idol","original_language":"en","original_name":"American Idol","overview":"Each
+        year, hopeful singers from all over the country audition to be part of one
+        of the biggest shows in American television history. Who will become the new
+        American Idol?","poster_path":"/wF9LQcz2EzxO2Q34CvKE8sOxGTu.jpg","media_type":"tv","genre_ids":[10764],"popularity":37.782,"first_air_date":"2002-06-11","vote_average":5.167,"vote_count":135,"origin_country":["US"]},{"adult":false,"backdrop_path":"/4j3TvqwZ3tyxvelmZQRyvNAyDnk.jpg","id":3976,"name":"So
+        You Think You Can Dance","original_language":"en","original_name":"So You
+        Think You Can Dance","overview":"Dancers selected in open auditions across
+        America take part in a rigorous competition designed to best display their
+        talents, training and personalities to a panel of judges and viewers as they
+        strive to win votes and avoid elimination.","poster_path":"/e4JAJ3UGBmAshXQG69uH9AgnZkp.jpg","media_type":"tv","genre_ids":[10764],"popularity":22.266,"first_air_date":"2005-07-20","vote_average":7.236,"vote_count":55,"origin_country":["US"]},{"adult":false,"backdrop_path":"/5gf2fnt8QTdYdSQy2cuCklBseEl.jpg","id":14880,"name":"Little
+        Britain USA","original_language":"en","original_name":"Little Britain USA","overview":"Lucas
+        and David Walliams, the stars of the smash-hit BBC comedy Little Britain,
+        bring their unique blend of scripted comedy and characterization to America.","poster_path":"/nQ0N7uCQfNDTTtTNfJzDfH5YHB0.jpg","media_type":"tv","genre_ids":[35],"popularity":6.696,"first_air_date":"2008-09-28","vote_average":6.739,"vote_count":46,"origin_country":["US"]}]}],"tv_results":[],"tv_episode_results":[],"tv_season_results":[]}'
+  recorded_at: Sat, 26 Nov 2022 18:52:50 GMT
+recorded_with: VCR 6.1.0

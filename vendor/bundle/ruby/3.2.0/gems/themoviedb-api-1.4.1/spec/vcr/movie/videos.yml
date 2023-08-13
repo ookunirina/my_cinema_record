@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/movie/550/videos?api_key=c29379565234e20d7cbf4f2e835c3e41&language=en
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin21 x86_64) ruby/2.7.7p221
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.themoviedb.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 26 Nov 2022 18:52:54 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=28800
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - fe736395bcfe6b14d93e0fc12a1397b915840647
+      X-Memc-Age:
+      - '5428'
+      X-Memc-Expires:
+      - '10949'
+      Etag:
+      - W/"ec95a14bf8bd748428fff5c7897e9f2e"
+      Vary:
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 3e1fbd4f1796159d47b2d71ded915952.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAD53-P2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - mCALyKNnhEyB-XDIRzJdbO8TTp0UtWaAJVT99MVCUq9bvba68G6dbw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":550,"results":[{"iso_639_1":"en","iso_3166_1":"US","name":"#TBT
+        Trailer","key":"BdJKm16Co6M","site":"YouTube","size":1080,"type":"Trailer","official":true,"published_at":"2014-10-02T19:20:22.000Z","id":"5c9294240e0a267cd516835f"}]}'
+  recorded_at: Sat, 26 Nov 2022 18:52:54 GMT
+recorded_with: VCR 6.1.0

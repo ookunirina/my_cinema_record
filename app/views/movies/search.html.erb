@@ -1,0 +1,76 @@
+<%= stylesheet_link_tag 'movie' %>
+<p class="warning-text">あらすじが無いのもあります！</p>
+<%= link_to movies_show_path, class: 'link' do %>
+    本日の世界のトレンド映画を見るには、ここをクリック<i class="fa-regular fa-star fa-spin" style="color: #fff700;"></i>
+  <% end %>
+<h1>映画検索</h1>
+
+<div>
+  <%= form_tag(movies_search_path, method: :get) do %>
+    <%= search_field_tag :looking_for, nil, placeholder: 'ここに映画タイトルを', class: 'custom-search-field' %>
+    <%= submit_tag '検索' %>
+  <% end %>
+</div>
+
+<%# 検索された時にコンテンツを表示する %>
+<%if params[:looking_for].present? %>
+    <% movieinfo = JSON.parse((Tmdb::Search.movie(params[:looking_for])).to_json) %>
+    <h2><%= params[:looking_for] %>の検索結果</h2>
+    <% i = 0 %>
+    <div class="card-wrapper">
+    <% if movieinfo['table']['results'].any? %>
+        <% while i < movieinfo['table']['results'].count %>
+            <div class="card">
+                <div class="card-upperinfo">
+                    <%if movieinfo['table']['results'][i]['table']['title'].present?%>
+                    <h3><%= movieinfo['table']['results'][i]['table']['title'] %></h3>
+                    <%end%>
+
+                    <% if movieinfo['table']['results'][i]['table']['release_date'].present? %>
+                        <p class="release-date"><%= movieinfo['table']['results'][i]['table']['release_date'] %></p>
+                    <%end%>
+                </div>
+
+                <% if movieinfo['table']['results'][i]['table']['overview'].present? %>
+                <p> <%= movieinfo['table']['results'][i]['table']['overview'] %></p>
+            <%end%>
+                <% if movieinfo['table']['results'][i]['table']['poster_path'].present? %>
+                    <p><%= image_tag 'https://image.tmdb.org/t/p/w1280' + movieinfo['table']['results'][i]['table']['poster_path'],class: "card-img" %></p>
+                <%end%>
+
+            </div>
+            <% i += 1%>
+        <%end%>
+        <% else %>
+            <h2>該当する映画が見つかりませんでした。</h2>
+        <% end %>
+    </div>
+<%else%>
+<h2>映画館で上映されている映画＆動画配信サイトで観れる最新映画</h2>
+<% movieinfo = JSON.parse((Tmdb::Movie.now_playing).to_json) %>
+<% i = 0 %>
+<div class="card-wrapper">
+    <% while i < movieinfo['table']['results'].count %>
+        <div class="card">
+            <div class="card-upperinfo">
+                <%if movieinfo['table']['results'][i]['table']['title'].present?%>
+                <h3><%= movieinfo['table']['results'][i]['table']['title'] %></h3>
+                <%end%>
+
+                <% if movieinfo['table']['results'][i]['table']['release_date'].present? %>
+                    <p class="release-date"><%= movieinfo['table']['results'][i]['table']['release_date'] %></p>
+                <%end%>
+            </div>
+
+            <% if movieinfo['table']['results'][i]['table']['overview'].present? %>
+            <p> <%= movieinfo['table']['results'][i]['table']['overview'] %></p>
+        <%end%>
+            <% if movieinfo['table']['results'][i]['table']['poster_path'].present? %>
+                <p><%= image_tag 'https://image.tmdb.org/t/p/w1280' + movieinfo['table']['results'][i]['table']['poster_path'],class: "card-img" %></p>
+            <%end%>
+        </div>
+
+        <% i += 1%>
+    <%end%>
+</div>
+<% end %>

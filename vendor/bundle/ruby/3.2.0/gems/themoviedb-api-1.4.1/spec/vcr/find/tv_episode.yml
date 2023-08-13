@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/find/1924016?api_key=c29379565234e20d7cbf4f2e835c3e41&external_source=tvdb_id&language=en
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin21 x86_64) ruby/2.7.7p221
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.themoviedb.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 26 Nov 2022 19:24:22 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=28800
+      X-Memc:
+      - MISS, STORE
+      X-Memc-Key:
+      - b649ad34891730973e93eb134153d493e2d5d323
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '21600'
+      Etag:
+      - W/"3b2157e907b79b0b2a3a348185219ffd"
+      Vary:
+      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Origin
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 4fb361dabf6902582234513aa6a23540.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAD53-P2
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - P0yc8mfKnEmPMaeFZ6JnQ6syp4WfzmDtxlnp-2KTKPNCSthFmMxKMQ==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"movie_results":[],"person_results":[],"tv_results":[],"tv_episode_results":[],"tv_season_results":[{"id":126785,"name":"Season
+        1","overview":"","poster_path":"/csDPKzcTH6IaRekE1YVmbLUa23f.jpg","media_type":"tv_season","air_date":"2022-11-17","season_number":1,"show_id":90669,"episode_count":8}]}'
+  recorded_at: Sat, 26 Nov 2022 19:24:22 GMT
+recorded_with: VCR 6.1.0

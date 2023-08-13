@@ -1,0 +1,85 @@
+{
+  "adult": false,
+  "backdrop_path": "/hSaH9tt67bozo9K50sbH0s4YjEc.jpg",
+  "belongs_to_collection": null,
+  "budget": 3300000,
+  "genres": [
+    {
+      "id": 28,
+      "name": "Action"
+    },
+    {
+      "id": 80,
+      "name": "Crime"
+    },
+    {
+      "id": 18,
+      "name": "Drama"
+    },
+    {
+      "id": 10769,
+      "name": "Foreign"
+    }
+  ],
+  "homepage": "http://cidadededeus.globo.com/",
+  "id": 598,
+  "imdb_id": "tt0317248",
+  "original_title": "Cidade de Deus",
+  "overview": "City of God depicts the raw violence in the ghettos of Rio de Janeiro.",
+  "popularity": 1.3497251049225558,
+  "poster_path": "/mwDnSQR1CkxuDjSKfgiNT0sIOjM.jpg",
+  "production_companies": [
+    {
+      "name": "O2 Filmes",
+      "id": 345
+    },
+    {
+      "name": "VideoFilmes",
+      "id": 346
+    },
+    {
+      "name": "Globo filmes",
+      "id": 10954
+    },
+    {
+      "name": "Lumiere",
+      "id": 11444
+    },
+    {
+      "name": "Wild Bunch",
+      "id": 856
+    },
+    {
+      "name": "Hank Levine Film",
+      "id": 11445
+    },
+    {
+      "name": "Lereby Productions",
+      "id": 11446
+    }
+  ],
+  "production_countries": [
+    {
+      "iso_3166_1": "BR",
+      "name": "Brazil"
+    },
+    {
+      "iso_3166_1": "FR",
+      "name": "France"
+    }
+  ],
+  "release_date": "2002-08-31",
+  "revenue": 27387381,
+  "runtime": 130,
+  "spoken_languages": [
+    {
+      "iso_639_1": "pt",
+      "name": "Português"
+    }
+  ],
+  "status": "Released",
+  "tagline": "If you run you're dead...if you stay, you're dead again. Period.",
+  "title": "City of God",
+  "vote_average": 8.2,
+  "vote_count": 52
+}
