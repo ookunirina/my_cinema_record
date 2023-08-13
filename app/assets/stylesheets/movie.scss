@@ -1,0 +1,47 @@
+.card {
+    border-radius: 10px;
+    width: 28%;
+    margin-bottom: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-wrapper {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.release-date {
+    text-align: right;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.card-upperinfo {
+    height: 139px;
+    overflow-y: scroll;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+  }
+
+  .warning-text {
+    color: yellow;
+    font-size: 30px; 
+}
+
+.link {
+    color: #2988efdf;
+    font-size: 25px; 
+}
+
+.custom-search-field {
+    width: 500px;
+  }
