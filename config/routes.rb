@@ -6,9 +6,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root 'top#index'
-  get 'movie_information/index'
   get 'movie_information', to: 'movie_information#index'
-  
   get 'movies/search', to: 'movies#search'
   get 'movies/show', to: 'movies#show'
   
