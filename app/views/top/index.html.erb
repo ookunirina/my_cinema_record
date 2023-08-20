@@ -7,10 +7,12 @@
       <h3>忘れずに観た映画を記録、ツイートし皆に知ってもらおう。</h3>
     </div>
     <div class="links">
-      <%= link_to "他ユーザーの見た映画記録を見る", movierecords_path, class: 'link' %>
-      <%= link_to "■映画を観に行く前情報", movie_information_path, class: 'link' %>
+      <%= link_to "ユーザーの観た映画記録を見る", movierecords_path, class: 'link' %>
+      <%= link_to movie_information_path, class: 'link' do %>
+      <i class="fa-solid fa-circle-info fa-flip" style="color: #f2f2f2;"></i>映画を観に行く前情報
+      <% end %>
       <%= link_to rankings_path, class: 'link' do %>
-        見た映画記録数、ランキング<i class='fas fa-crown' style='color:#f0d000'></i>
+        ユーザー達の観た映画記録数、ランキング<i class='fas fa-crown' style='color:#f0d000'></i>
         <% end %>
       <%= link_to movies_search_path, class: 'link' do %>
         映画検索＆上映されている映画、動画配信サイトで観れる最新映画<i class="fa-regular fa-star fa-spin" style="color: #fff700;"></i>

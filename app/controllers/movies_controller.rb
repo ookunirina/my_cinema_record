@@ -1,4 +1,5 @@
 class MoviesController < ApplicationController
+  skip_before_action :require_login, only: %i[search show]
 
   require 'dotenv/load'
   require 'themoviedb-api'
