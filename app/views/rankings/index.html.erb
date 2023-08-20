@@ -1,11 +1,12 @@
 <div class="container mx-auto max-w-lg py-6 px-4">
   <div class="flex flex-col items-center bg-achieved-background-count-color rounded-lg p-4 shadow-md">
-    <h1 class="text-2xl text-center text-achieved_count-color text-yellow-100">見た映画記録数、ランキング</h1>
+    <h1 class="text-2xl text-center text-achieved_count-color text-yellow-100">観た映画記録数ランキング</h1>
     <div class="text-center text-white ">
+    <h5>※映画の記録を作成した合計数です</h5><br>
       <% @user_movierecord_ranks.each_with_index do |user, index| %>
         <div class="mb-4">
           <h4><%= top_ranking_crown(index) if index < 3 %>
-          <%= "#{index + 1}位. #{user.name}さん 見た映画記録数: #{user.movierecords_count}" %></h4>
+          <%= "#{index + 1}位 #{user.name}さん 現在観た映画記録数: #{user.movierecords_count}" %></h4><br>
         </div>
       <% end %>
       <%= link_to t('defaults.back'), :back, class: 'navbar-brand' %>
