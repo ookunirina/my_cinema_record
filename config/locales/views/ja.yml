@@ -9,6 +9,7 @@ ja:
     topback: 'トップページに戻る'
     back: '戻る'
     edit: '編集'
+    password_reset: 'パスワードリセット'
     search_word: '映画タイトルを入力して下さい'
     message:
       require_login: 'ログインしてください'
@@ -30,7 +31,7 @@ ja:
     new:
       title: 'ログイン'
       to_register_page: '登録ページへ'
-      password_forget: 'パスワードをお忘れの方'
+      to_reset_password_page: 'パスワードをお忘れの方'
 
     create:
       success: 'ログインしました'
@@ -38,6 +39,18 @@ ja:
       
     destroy:
       success: 'ログアウトしました'
+
+  password_resets: 
+    create:
+      success: 'パスワードリセットのメールを送信しました'
+    update:
+      success: 'パスワードを変更しました'
+      failed: 'パスワードを変更できませんでした'
+    new:
+      title: 'パスワードリセット申請画面'
+      submit: '送信する'
+    edit:
+      title: 'パスワードリセット'
 
   movierecords:
     index:

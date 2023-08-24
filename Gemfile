@@ -55,6 +55,7 @@ gem 'sass-rails'
 # Authentication
 gem "sorcery"
 gem 'carrierwave'
+gem 'mini_magick'
 gem 'ransack', "~> 3.2.1"
 # translation
 gem 'rails-i18n'
@@ -92,6 +93,8 @@ group :development do
   gem 'solargraph'
   gem 'annotate'
 
+  #パスワードリセット
+  gem 'letter_opener_web'
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
