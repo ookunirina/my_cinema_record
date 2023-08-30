@@ -1,23 +1,27 @@
-<div class="row justify-content-center">
-<h2>他ユーザーのオススメ映画</h2>
-<% @recommended_movierecords.each do |movierecord| %>
-    <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 mb-5">
-      <div class="card p-2 mx-3">
-        <%= image_tag movierecord.image_url_url, class: 'card-img-top' %>
-        <div class="card-body">
-          <h5 class="card-title">
-            <%= link_to movierecord.title, movierecord_path(movierecord) %>
-          </h5>
-          <div>
-            総合評価：
-            <div class="star-rating">
-              <div class="star-rating-front" style="width: <%= getPercent(movierecord.star) %>%;">★★★★★</div>
-              <div class="star-rating-back">★★★★★</div>
+<div class="container pt-3">
+  <h2>他ユーザーのオススメ映画</h2>
+  <% if @recommended_movierecords.any? %>
+    <% @recommended_movierecords.each do |movierecord| %>
+      <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 mb-5">
+        <div class="card p-2 mx-3">
+          <%= image_tag movierecord.image_url_url, class: 'card-img-top' %>
+          <div class="card-body">
+            <h5 class="card-title">
+              <%= link_to movierecord.title, movierecord_path(movierecord) %>
+            </h5>
+            <div>
+              総合評価：
+              <div class="star-rating">
+                <div class="star-rating-front" style="width: <%= getPercent(movierecord.star) %>%;">★★★★★</div>
+                <div class="star-rating-back">★★★★★</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    <% end %>
+  <% else %>
+    <p><%= t('.no_result') %></p>
   <% end %>
   <%= link_to t('defaults.back'), :back, class: 'navbar-brand' %> 
 </div>

@@ -65,7 +65,7 @@ ja:
       title: '映画の記録を編集'
     likes:
       title: 'ブックマーク一覧'
-      no_result: 'ブックマーク中の掲示板がありません。'
+      no_result: 'ブックマーク中の映画記録がありません。'
     create:
       success: '記録を作成しました'
       fail: '記録を作成できませんでした'
@@ -75,6 +75,10 @@ ja:
       making: '映画の記録を作成する'
     edit:
       title: 'プロフィール編集'
+  recommended:
+    index:
+      no_result: '他ユーザーからのオススメの映画記録がありません。'
+
 
 
   time:
