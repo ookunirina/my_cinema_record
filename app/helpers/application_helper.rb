@@ -12,7 +12,7 @@ module ApplicationHelper
   def default_meta_tags
     {
       site: 'MyCinemaRecord',
-      title: '見た映画を記録＆ツイートできるサービス',
+      title: '観た映画を記録＆ツイートできるサービス',
       reverse: true,
       charset: 'utf-8',
       description: '',
