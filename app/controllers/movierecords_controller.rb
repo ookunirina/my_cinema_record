@@ -1,5 +1,5 @@
 class MovierecordsController < ApplicationController
-  before_action :set_movierecord, only: [:edit, :update, :destroy]
+  before_action :set_movierecord, only: %i[edit update destroy]
 
   def index
     @tag_list = Tag.all
