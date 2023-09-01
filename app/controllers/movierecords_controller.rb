@@ -1,10 +1,15 @@
 class MovierecordsController < ApplicationController
-  before_action :set_movierecord, only: [:edit, :update, :destroy]
+  before_action :set_movierecord, only: %i[edit update destroy]
 
   def index
     @tag_list = Tag.all
     @q = Movierecord.ransack(params[:q])
     @movierecords = @q.result(distinct: true).includes(:user).order(created_at: :desc)
+  end
+
+  def show
+    @movierecord = Movierecord.find(params[:id])
+    @movierecord.tags = @movierecord.tags
   end
 
   def new
@@ -21,11 +26,6 @@ class MovierecordsController < ApplicationController
       flash.now['danger'] = t('movierecords.create.fail')
       render :new, status: :unprocessable_entity
     end
-  end
-
-  def show
-    @movierecord = Movierecord.find(params[:id])
-    @movierecord.tags = @movierecord.tags
   end
 
   def edit

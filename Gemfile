@@ -1,35 +1,35 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.2.2"
+ruby '3.2.2'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.0.4", ">= 7.0.4.3"
+gem 'rails', '~> 7.0.4', '>= 7.0.4.3'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
-gem "sprockets-rails"
+gem 'sprockets-rails'
 
 # Use mysql as the database for Active Record
-gem "mysql2", "~> 0.5", group: :development
+gem 'mysql2', '~> 0.5', group: :development
 gem 'pg', group: :production
 
 # Use the Puma web server [https://github.com/puma/puma]
-gem "puma", "~> 5.0"
+gem 'puma', '~> 5.0'
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
-gem "importmap-rails"
+gem 'importmap-rails'
 
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
-gem "turbo-rails"
+gem 'turbo-rails'
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
-gem "stimulus-rails"
+gem 'stimulus-rails'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
-gem "jbuilder"
+gem 'jbuilder'
 
 # Use Redis adapter to run Action Cable in production
-gem "redis", "~> 4.0"
+gem 'redis', '~> 4.0'
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
@@ -38,14 +38,14 @@ gem "redis", "~> 4.0"
 # gem "bcrypt", "~> 3.1.7"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 # Reduces boot times through caching; required in config/boot.rb
-gem "bootsnap", require: false
+gem 'bootsnap', require: false
 
 # Use Sass to process CSS
+gem 'bootstrap', '~> 5.2.3'
 gem 'font-awesome-sass', '~> 5.12.0'
-gem "bootstrap", "~> 5.2.3"
 gem 'jquery-rails'
 gem 'sass-rails'
 
@@ -53,38 +53,38 @@ gem 'sass-rails'
 # gem "image_processing", "~> 1.2"
 
 # Authentication
-gem "sorcery"
 gem 'carrierwave'
 gem 'mini_magick'
-gem 'ransack', "~> 3.2.1"
+gem 'ransack', '~> 3.2.1'
+gem 'sorcery'
 # translation
 gem 'rails-i18n'
 
-#ogp
-gem "meta-tags"
+# ogp
+gem 'meta-tags'
 
-#TMDb API
+# TMDb API
 gem 'themoviedb-api', '~> 1.4', '>= 1.4.1'
 
-#環境変数
+# 環境変数
 gem 'dotenv-rails'
 
-#AWS
+# AWS
+gem 'aws-sdk-s3', require: false
 gem 'fog-aws'
-gem "aws-sdk-s3", require: false 
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem 'debug', platforms: %i[mri mingw x64_mingw]
 
   # Test
-  gem "factory_bot_rails"
-  gem "rspec-rails"
+  gem 'factory_bot_rails'
+  gem 'rspec-rails'
 
   # Code analyze
-  gem "rubocop", require: false
-  gem "rubocop-rails", require: false
-  gem "bullet"
+  gem 'bullet'
+  gem 'rubocop', require: false
+  gem 'rubocop-rails', require: false
 
   # Debugger
   gem 'better_errors'
@@ -93,11 +93,11 @@ end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
-  gem "web-console"
-  gem 'solargraph'
   gem 'annotate'
+  gem 'solargraph'
+  gem 'web-console'
 
-  #パスワードリセット
+  # パスワードリセット
   gem 'letter_opener_web'
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
@@ -107,7 +107,7 @@ group :development do
 end
 
 group :test do
-  gem "capybara"
-  gem "faker"
-  gem "webdrivers"
+  gem 'capybara'
+  gem 'faker'
+  gem 'webdrivers'
 end

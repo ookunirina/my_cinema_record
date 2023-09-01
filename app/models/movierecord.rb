@@ -15,10 +15,10 @@ class Movierecord < ApplicationRecord
 
   def save_with_tags(tag_names:)
     ActiveRecord::Base.transaction do
-      self.tags.clear
+      tags.clear
       tag_names.each do |name|
         tag = Tag.find_or_create_by(name: name.strip)
-        self.tags << tag 
+        tags << tag
       end
       save!
     end

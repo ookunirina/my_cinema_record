@@ -6,6 +6,6 @@ class CreateMovierecordTags < ActiveRecord::Migration[7.0]
 
       t.timestamps
     end
-    add_index :movierecord_tags, [:movierecord_id, :tag_id], unique: true
+    add_index :movierecord_tags, %i[movierecord_id tag_id], unique: true
   end
 end
