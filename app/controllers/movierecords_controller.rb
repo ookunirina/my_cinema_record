@@ -7,6 +7,11 @@ class MovierecordsController < ApplicationController
     @movierecords = @q.result(distinct: true).includes(:user).order(created_at: :desc)
   end
 
+  def show
+    @movierecord = Movierecord.find(params[:id])
+    @movierecord.tags = @movierecord.tags
+  end
+
   def new
     @movierecord = Movierecord.new
   end
@@ -21,11 +26,6 @@ class MovierecordsController < ApplicationController
       flash.now['danger'] = t('movierecords.create.fail')
       render :new, status: :unprocessable_entity
     end
-  end
-
-  def show
-    @movierecord = Movierecord.find(params[:id])
-    @movierecord.tags = @movierecord.tags
   end
 
   def edit
