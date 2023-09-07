@@ -78,6 +78,16 @@ ja:
   recommended:
     index:
       no_result: '他ユーザーからのオススメの映画記録がありません。'
+  schedules:
+    index:
+      title: '予定カレンダー'
+    show:
+      title: '予定詳細'
+    edit:
+      title: '予定編集'
+    create:
+      success: '予定を作成しました'
+      fail: '予定を作成できませんでした'
 
 
 
@@ -86,3 +96,10 @@ ja:
       default: "%Y年%m月%d日(%a) %H時%M分%S秒 %z"
       long: "%Y/%m/%d %H:%M"
       short: "%m/%d %H:%M"
+
+
+  simple_calendar:
+    previous: "前月"
+    today: "今日"
+    next: "次月"
+    week: Woche
