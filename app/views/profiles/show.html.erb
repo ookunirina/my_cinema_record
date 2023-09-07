@@ -14,8 +14,7 @@
           <td><%= current_user.email %></td>
         </tr>
       </table>
-      
-      <!-- 各種リンク↓ -->
+      <%= link_to '予定カレンダー', schedules_path, class: 'link' %><br>
       <%= link_to '他ユーザー達のオススメ映画3つ', recommended_path, class: 'link' %><br>
       <%= link_to "自分が観た映画の記録", '#', class: 'link' %>
       <%= link_to t('defaults.topback'), root_path, class: 'nav-link' %>
