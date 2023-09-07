@@ -1,0 +1,42 @@
+<%= stylesheet_link_tag 'simple_calendar' %>
+<% content_for(:title, t('.title')) %>
+<div class="text-center">
+<h1><%= t('.title') %></h1>
+  <p id="notice"><%= notice %></p>
+</div>
+
+<div class="show text-center">
+  <p>
+  <strong class="white-text">タイトル</strong><br>
+    <%= @schedule.title %>
+  </p>
+
+  <p>
+    <strong class="white-text">内容</strong><br>
+    <%= @schedule.content %>
+  </p>
+
+  <p>
+    <strong class="white-text">日時</strong>
+    <%= @schedule.start_time.strftime("%m-%d %H:%M") %>
+  </p>
+
+  <ul class="list-inline">
+    <li class="list-inline-item">
+      <%= link_to edit_schedule_path(@schedule), id: "button-edit-#{@schedule.id}" do %>
+        <%= icon 'fa', 'pen' %>
+      <% end %>
+    </li>
+    <li class="list-inline-item">
+      <%= button_to schedule_path(@schedule), id: "button-delete-#{@schedule.id}",
+                     method: :delete, data: { turbo: false },
+                     form: { onSubmit: "return check();" },
+                     class: 'btn2 btn-danger', remote: true do %>
+        <%= icon 'fas', 'trash' %>
+      <% end %>
+    </li>
+    <li class="list-inline-item">
+      <%= link_to t('defaults.back'), :back, class: 'navbar-brand' %> 
+    </li>
+  </ul>
+</div>
