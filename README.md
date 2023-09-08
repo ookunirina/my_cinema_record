@@ -100,7 +100,7 @@ Rails 7
 JavaScript
 postgresql
 Heroku
-Youtube Date API
+TMDb API
 
 # 画面遷移図
 https://www.figma.com/file/6mhiau7jFO9BIFwxGoW5Fl/%E7%84%A1%E9%A1%8C?type=design&node-id=0%3A1&mode=design&t=YGD2OeusxeT1EHZk-1
