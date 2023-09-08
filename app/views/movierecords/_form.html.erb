@@ -1,10 +1,17 @@
+<%= javascript_include_tag 'preview_image' %>
+<%= javascript_include_tag 'movierecord_suggestions' %>
 <%= form_with model: movierecord, local: true do |f| %>
     <%= render 'shared/error_messages', object: f.object %>
     <div class="form-group">
       <%= f.label :title %>
-      <%= f.text_field :title, class: 'form-control', placeholder: 'ここにタイトルを入力してください' %>
-    </div>
-    <div class="form-group">
+      
+      <%= f.text_field :title, class: 'form-control', list: 'movie-titles', placeholder: 'ここにタイトルを入力してください' %>
+    <datalist id="movie-titles">
+    <!-- ここに映画のタイトルが動的に追加されます -->
+    </datalist>
+  </div>
+
+    <div class="form-group pt-4">
       <%= f.label :image_url %>
       <span class="badge text-bg-danger">映画を観た時の半チケやムビチケ等、映画館での写真をお使いください。</span>
       <%= f.file_field :image_url, class: 'form-control mb-3', accept: 'image/*', id: 'image-input' %>
@@ -26,9 +33,10 @@
     <%= f.radio_button :viewing_style, "DVDorBlu-ray" %>
     <%= f.label :viewing_style_DVDorブルーレイ, "DVDorBlu-ray" %>
   </div>
-    <div class="form-group">
+    <div class="form-group pt-4">
       <%= f.label :tag %>
-      <span class="badge text-bg-danger">同じ名前のタグは、一つまで</span>
+      <span class="badge text-bg-danger">同じ名前のタグは、一つまで</span><br>
+      <span class="badge bg-info text-dark">オススメタグを付けるとマイページ内の他ユーザー達のオススメ映画3つページにてランダムで表示されます</span>
       <%= f.text_field :tag, value: @tag_list, class: 'form-control', placeholder: ',で区切って入力してください' %>
     </div>
     <h5>総合評価</h5>
@@ -44,7 +52,7 @@
      <%= f.radio_button :star, 1 ,id: 'star5'%>
      <label for="star5"><span class="text">最悪</span>★</label>
     </div>
-    <div class="form-group">
+    <div class="form-group pt-4">
       <%= f.label :review %>
       <%= f.text_area :review, class: 'form-control', rows: 10 %>
     </div>
@@ -53,18 +61,3 @@
     <%= link_to t('defaults.mtback'), movierecords_path, class: 'navbar-brand' %>
     </div>
   <% end %>
-
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const imageInput = document.getElementById('image-input');
-    const previewImage = document.getElementById('preview');
-
-    imageInput.addEventListener('change', function() {
-      const selectedImage = imageInput.files[0];
-      if (selectedImage) {
-        const objectUrl = URL.createObjectURL(selectedImage);
-        previewImage.src = objectUrl;
-      }
-    });
-  });
-</script>
