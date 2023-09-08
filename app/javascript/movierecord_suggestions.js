@@ -1,5 +1,5 @@
 function searchMovieTitles(query) {
-    const apiKey = process.env.API_KEY;
+    const apiKey = process.env.TMDB_API_KEY;
     const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=ja-JP&query=${query}`;
     
   
