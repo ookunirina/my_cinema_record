@@ -11,8 +11,6 @@
     <%= submit_tag '検索' %>
   <% end %>
 </div>
-
-<%# 検索された時にコンテンツを表示する %>
 <%if params[:looking_for].present? %>
     <% movieinfo = JSON.parse((Tmdb::Search.movie(params[:looking_for])).to_json) %>
     <h2><%= params[:looking_for] %>の検索結果</h2>
