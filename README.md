@@ -95,8 +95,8 @@ TMDb API使用する。
 
 
 # 使用する予定の技術
-Ruby 3
-Rails 7
+Ruby 3.2.2
+Rails 7.0.4
 JavaScript
 postgresql
 Heroku
