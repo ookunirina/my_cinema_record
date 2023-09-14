@@ -1,10 +1,42 @@
 <%= search_form_for @q, url: url do |f| %>
   <div class="input-group mb-5">
-  <div class="col-8">
-    <%= f.search_field :title_cont, class: 'form-control', placeholder: t('defaults.search_word') %>
+    <div class="col-8">
+      <%= f.search_field :title_cont, class: 'form-control', placeholder: t('defaults.search_word'), list: 'movie-titles' %>
     </div>
     <div class="col-4">
-      <%= f.submit class: 'btn btn-primary btn-block' %>
+      <%= f.submit class: 'btn btn-block' %>
     </div>
   </div>
 <% end %>
+
+<datalist id="movie-titles"></datalist>
+
+<script>
+  function searchMovieTitles(query) {
+    const apiKey = '<%= ENV["API_KEY"] %>';
+    const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=ja-JP&query=${query}`;
+
+    return fetch(url)
+      .then(response => response.json())
+      .then(data => data.results)
+      .catch(error => console.error(error));
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const titleInput = document.querySelector('input[name="q[title_cont]"]');
+    const dataList = document.getElementById('movie-titles');
+
+    titleInput.addEventListener('input', function() {
+      if (titleInput.value.length >= 2) {
+        searchMovieTitles(titleInput.value).then(titles => {
+          dataList.innerHTML = ''; // 以前の検索結果を削除
+          for (const movie of titles) {
+            const option = document.createElement('option');
+            option.value = movie.title;
+            dataList.appendChild(option);
+          }
+        });
+      }
+    });
+  });
+</script>
