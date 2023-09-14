@@ -7,8 +7,13 @@
 
 <div>
   <%= form_tag(movies_search_path, method: :get) do %>
-    <%= search_field_tag :looking_for, nil, placeholder: 'ここに映画タイトルを入力して下さい。', class: 'custom-search-field' %>
-    <%= submit_tag '検索' %>
+    <%= text_field_tag :looking_for, nil, list: 'movie-titles', placeholder: 'ここに映画タイトルを入力して下さい。', class: 'custom-search-field' %>
+    <%= button_tag(type: 'submit') do %>
+      <i class="fas fa-search"></i> 検索
+    <% end %>
+    <datalist id="movie-titles">
+      <!-- ここに映画のタイトルが動的に追加されます -->
+    </datalist>
   <% end %>
 </div>
 <%if params[:looking_for].present? %>
@@ -67,8 +72,37 @@
                 <p><%= image_tag 'https://image.tmdb.org/t/p/w1280' + movieinfo['table']['results'][i]['table']['poster_path'],class: "card-img" %></p>
             <%end%>
         </div>
-
         <% i += 1%>
     <%end%>
 </div>
 <% end %>
+
+<script>
+  function fetchMovieTitles(query) {
+    const apiKey = '<%= ENV["API_KEY"] %>';
+    const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=ja-JP&query=${query}`;
+
+    return fetch(url)
+      .then(response => response.json())
+      .then(data => data.results)
+      .catch(error => console.error(error));
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const titleInput = document.querySelector('input[name="looking_for"]');
+    const dataList = document.getElementById('movie-titles');
+
+    titleInput.addEventListener('input', function() {
+      if (titleInput.value.length >= 2) {
+        fetchMovieTitles(titleInput.value).then(titles => {
+          dataList.innerHTML = '';
+          for (const movie of titles) {
+            const option = document.createElement('option');
+            option.value = movie.title;
+            dataList.appendChild(option);
+          }
+        });
+      }
+    });
+  });
+</script>
