@@ -1,18 +1,20 @@
-<footer>
+<%= stylesheet_link_tag 'footer' %>
+<footer style="background-color: black;">
   <div class="container-fluid">
-    <div class="row style="background-color: black;">
-      <ul class="nav justify-content-center border-bottom ">
+    <div class="border-top border-white">
+      <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a><%= link_to "利用規約", "#", class: "nav-link px-2 text-muted" %></a>
+          <%= link_to "利用規約", "#", class: 'nav-link fw-bold' %>
         </li>
         <li class="nav-item">
-          <a><%= link_to "プライバシーポリシー", "#", class: "nav-link px-2 text-muted" %></a>
+          <%= link_to "プライバシーポリシー", "#", class: 'nav-link fw-bold' %>
         </li>
         <li class="nav-item">
-          <a><%= link_to "お問い合わせ", "#", class: "nav-link px-2 text-muted" %></a>
+          <%= link_to "お問い合わせ", "#", class: 'nav-link fw-bold' %>
         </li>
       </ul>
-      <p class="text-center text-muted">Copyright © 2023. My Cinema Record</p>
+      <div class="pt-5">
+      <p class="text-center text-white">Copyright © 2023. My Cinema Record</p>
     </div>
   </div>
 </footer>
