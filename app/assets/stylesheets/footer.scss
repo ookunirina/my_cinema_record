@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    min-height: 70vh;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.nav-link {
+    color: rgb(255, 255, 255);
+}
+
+.nav-link:hover {
+    color: rgb(255, 255, 255);
+    box-shadow: none;
+    transform: translateY(5px);
+    text-decoration: underline;
+}
