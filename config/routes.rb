@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root 'top#index'
   get 'terms', to: 'top#terms'
+  get 'privacy', to: 'top#privacy'
 
   get 'login', to: 'user_sessions#new'
   post 'login', to: 'user_sessions#create'
