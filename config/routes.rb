@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   root 'top#index'
   get 'terms', to: 'top#terms'
   get 'privacy', to: 'top#privacy'
+  get 'contact', to: 'top#contact'
 
   get 'login', to: 'user_sessions#new'
   post 'login', to: 'user_sessions#create'
