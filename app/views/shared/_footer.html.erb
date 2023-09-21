@@ -1,19 +1,18 @@
 <%= stylesheet_link_tag 'footer' %>
-<footer style="background-color: black;">
+<footer class="pb-2 mt-5" style="background-color: black;">
   <div class="container-fluid">
-    <div class="border-top border-white">
       <ul class="nav justify-content-center">
         <li class="nav-item">
-          <%= link_to "利用規約", "#", class: 'nav-link fw-bold' %>
+          <%= link_to "利用規約", terms_path, class: 'nav-link fw-bold' %>
         </li>
         <li class="nav-item">
-          <%= link_to "プライバシーポリシー", "#", class: 'nav-link fw-bold' %>
+          <%= link_to "プライバシーポリシー", privacy_path, class: 'nav-link fw-bold' %>
         </li>
         <li class="nav-item">
-          <%= link_to "お問い合わせ", "#", class: 'nav-link fw-bold' %>
+          <%= link_to "お問い合わせ", contact_path, class: 'nav-link fw-bold' %>
         </li>
       </ul>
-      <div class="pt-5">
+      <div class="pt-4">
       <p class="text-center text-white">Copyright © 2023. My Cinema Record</p>
     </div>
   </div>
