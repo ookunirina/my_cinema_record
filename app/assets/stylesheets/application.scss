@@ -5,3 +5,12 @@
 @import "label";
 @import "twitter";
 @import "movierecord";
+
+.custom-toggler.navbar-toggler .navbar-toggler-icon {
+    background-color: #ffffff;
+}
+
+.custom-toggler {
+    border: 2px solid #f4f4f4; /* 枠線の幅と色を設定 */
+    border-radius: 5px; /* 枠線の角を丸くする場合 */
+}
