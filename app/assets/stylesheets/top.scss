@@ -14,14 +14,15 @@
   margin-top: 80px;
 }
 
-body {
-  background-color: #7f0909f1;
-}
-
-p {
+.sav-title{
   font-size: calc(0.85vw + 1rem);
   text-align: center;
   color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+body {
+  background-color: #7f0909f1;
 }
 
 .nav-link {
@@ -71,6 +72,6 @@ p {
 }
 
 .btn2 {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 0, 0);
   color: black;
 }
