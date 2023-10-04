@@ -28,47 +28,6 @@
     color: #ffcc00;
   }
 
-  .image-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* 画像がコンテナに収まるように調整 */
-  }
-  
-  .image-urlcontainer {
-    max-width: 300px; /* 画像コンテナの最大幅を指定 */
-  }
-  
-  .image-urlcontainer img {
-    width: 100%;
-    height: auto;
-  }
-  
-/*　以下一覧ページの星用のCSS　*/
-
-.star-rating {
-  position: relative;
-  display: inline-block;
-  width: 5em;
-  height: 1em;
-  font-size: 20px;
-}
-.star-rating-front {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  color: #ffcc33;
-}
-.star-rating-back {
-  display: inline-block;
-  color: #ccc;
-}
-
 /*　以下Twitterのアイコン　*/
 
 svg {
