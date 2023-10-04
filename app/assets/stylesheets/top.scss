@@ -59,13 +59,13 @@ body {
     background-color: #000000f1 !important;
 }
 
-.btn {
+.btn-header {
   background-color: rgb(255, 242, 132);
   color: rgb(74, 57, 57);
   border-radius: 100vh;
 }
 
-.btn:hover {
+.btn-header:hover {
   color: rgb(160, 160, 160);
   box-shadow: none;
   transform: translateY(5px);
@@ -74,4 +74,15 @@ body {
 .btn2 {
   background-color: rgb(255, 0, 0);
   color: black;
+}
+
+.btn-success {
+  background-color: #208711;
+  color: rgb(255, 255, 255);
+  border-radius: 100vh;
+}
+
+.btn-success:hover {
+  color: #9c9c9c;
+  transform: translateY(5px);
 }

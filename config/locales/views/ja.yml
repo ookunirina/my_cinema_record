@@ -88,7 +88,9 @@ ja:
     create:
       success: '予定を作成しました'
       fail: '予定を作成できませんでした'
-
+  movie_information:
+    index:
+      title: '映画を観に行く前情報'
 
 
   time:
