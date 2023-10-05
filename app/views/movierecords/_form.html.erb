@@ -4,7 +4,6 @@
     <%= render 'shared/error_messages', object: f.object %>
     <div class="form-group">
       <%= f.label :title %>
-      
       <%= f.text_field :title, class: 'form-control', list: 'movie-titles', placeholder: 'ここにタイトルを入力してください' %>
     <datalist id="movie-titles">
     <!-- ここに映画のタイトルが動的に追加されます -->
@@ -34,10 +33,10 @@
     <%= f.label :viewing_style_DVDorブルーレイ, "DVDorBlu-ray" %>
   </div>
     <div class="form-group pt-4">
-      <%= f.label :tag %>
-      <span class="badge text-bg-danger">同じ名前のタグは、一つまで</span><br>
-      <span class="badge bg-info text-dark">オススメタグを付けるとマイページ内の他ユーザー達のオススメ映画3つページにてランダムで表示されます</span>
-      <%= f.text_field :tag, value: @tag_list, class: 'form-control', placeholder: ',で区切って入力してください' %>
+      <%= f.label :tag %><br>
+      <span class="badge text-bg-danger">同じ名前のタグは、一つまでです。</span><br>
+      <span class="badge bg-info text-dark">オススメタグを付けるとマイページ内の他ユーザー達のオススメ映画3つページにてランダムで表示されます。</span>
+      <%= f.text_field :tag, value: @tag_list, class: 'form-control', placeholder: '複数タグを付け時は、半角の,で区切って入力すると複数タグを付けられます。' %>
     </div>
     <h5>総合評価</h5>
     <div class="movierecord_form">
@@ -56,9 +55,9 @@
       <%= f.label :review %>
       <%= f.text_area :review, class: 'form-control', rows: 10 %>
     </div>
-    <%= f.submit t('defaults.movierecord'), class: 'btn btn-primary' %>
+    <%= f.submit t('defaults.movierecord'), class: 'btn btn-header' %>
     <div>
-    <%= link_to t('defaults.mtback'), movierecords_path, class: 'navbar-brand' %>
+    <%= link_to t('defaults.mtback'), movierecords_path, class: 'link' %>
     </div>
   <% end %>
 
