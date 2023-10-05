@@ -15,7 +15,6 @@ Rails.application.routes.draw do
   get 'movies/show', to: 'movies#show'
   get 'recommended', to: 'recommended#index'
 
-  resources :users, only: %i[new create]
   resources :movierecords do
     collection do
       get :likes
@@ -23,12 +22,12 @@ Rails.application.routes.draw do
     resources :likes, only: %i[create destroy]
   end
 
-  resources :schedules
-
   resources :tags do
     get 'movierecords', to: 'movierecords#search'
   end
 
+  resources :users, only: %i[new create]
+  resources :schedules
   resources :rankings, only: :index
   resource :profile, only: %i[show edit update]
   resources :password_resets, only: %i[new create edit update]
