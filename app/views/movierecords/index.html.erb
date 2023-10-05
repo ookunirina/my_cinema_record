@@ -6,7 +6,6 @@
       <%= render 'search_form', url: movierecords_path %>
     </div>
   </div>
-  <%= link_to t('.making'), new_movierecord_path, class: 'nav-link custom-large-text' %>
   <!-- 記録一覧 -->
   <div class="row">
     <div class="col-12">
@@ -16,7 +15,7 @@
         <% else %>
           <p><%= t('.no_result') %></p>
         <% end %>
-        <%= link_to t('defaults.topback'), root_path, class: 'navbar-brand' %>
+        <%= link_to t('defaults.topback'), root_path, class: 'link' %>
       </div>
     </div>
   </div>

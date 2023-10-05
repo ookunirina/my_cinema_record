@@ -14,9 +14,7 @@
        </div> 
        </div>
         <ul class="list-inline">
-          <li class="list-inline-item">
-            <%= l movierecord.created_at, format: :long %>
-          </li>
+          <%= l movierecord.created_at, format: :long %>
         </ul>
         <%= render 'crud_menus', movierecord: movierecord if current_user.own?(movierecord)%>
       </div>
