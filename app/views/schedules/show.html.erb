@@ -1,24 +1,23 @@
 <%= stylesheet_link_tag 'simple_calendar' %>
 <% content_for(:title, t('.title')) %>
-<div class="text-center">
+<div class="text-center py-4">
 <h1><%= t('.title') %></h1>
-  <p id="notice"><%= notice %></p>
-</div>
+
 
 <div class="show text-center">
   <p>
   <strong class="white-text">タイトル</strong><br>
-    <%= @schedule.title %>
+  <span style="font-size: 24px;"><%= @schedule.title %></span>
   </p>
 
   <p>
     <strong class="white-text">内容</strong><br>
-    <%= @schedule.content %>
+    <span style="font-size: 24px;"><%= @schedule.content %></span>
   </p>
 
   <p>
-    <strong class="white-text">日時</strong>
-    <%= @schedule.start_time.strftime("%m-%d %H:%M") %>
+    <strong class="white-text">日時</strong><br>
+    <span style="font-size: 24px;"><%= @schedule.start_time.strftime("%m-%d %H:%M") %></span>
   </p>
 
   <ul class="list-inline">
@@ -34,9 +33,10 @@
                      class: 'btn2 btn-danger', remote: true do %>
         <%= icon 'fas', 'trash' %>
       <% end %>
+    </div>
     </li>
     <li class="list-inline-item">
-      <%= link_to t('defaults.back'), :back, class: 'navbar-brand' %> 
+    <%= link_to '予定カレンダーに戻る', schedules_path, class: 'link' %><br>
     </li>
   </ul>
 </div>

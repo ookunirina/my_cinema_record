@@ -46,6 +46,7 @@ body {
   color: #ffffff;
   margin-top: 50px;
   text-decoration: none;
+  font-size: 20px;
 }
 
 .link:hover {
@@ -85,4 +86,9 @@ body {
 .btn-success:hover {
   color: #9c9c9c;
   transform: translateY(5px);
+}
+
+.h2{
+  font-size: 40px;
+  color: white;
 }

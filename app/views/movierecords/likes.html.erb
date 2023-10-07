@@ -1,5 +1,5 @@
 <% content_for(:title, t('.title')) %>
-<div class="container pt-3">
+<div class="container py-5">
   <div class="row">
     <div class="col-lg-10 offset-lg-1">
     <%= render 'search_form', url: likes_movierecords_path %>
@@ -12,7 +12,7 @@
         <% if @like_movierecords.present? %>
           <%= render @like_movierecords %>
         <% else %>
-          <p><%= t('.no_result') %></p>
+          <p style="font-size: 25px; color: white; font-weight: bold;"><%= t('.no_result') %></p>
         <% end %>
         <%= link_to t('defaults.back'), :back, class: 'link' %> 
       </div>

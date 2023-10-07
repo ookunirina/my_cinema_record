@@ -67,7 +67,8 @@
 }
 
 .white-text {
-    color: white;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
   }
 
   .wide-text-field {
@@ -75,9 +76,31 @@
   }
 
   h1 {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 55px
   }
   
   .toppage {
     background-color: rgb(255, 255, 255);
   }
+
+  .form-tag {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.link {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.link:hover {
+  color: rgb(255, 255, 255);
+  box-shadow: none;
+  transform: translateY(5px);
+  text-decoration: underline;
+}
+
+.schedule{
+  font-size: 30px;
+}
