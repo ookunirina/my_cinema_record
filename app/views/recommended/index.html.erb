@@ -1,4 +1,4 @@
-<div class="container pt-3">
+<div class="container py-5">
   <h2>他ユーザーのオススメ映画</h2>
   <% if @recommended_movierecords.any? %>
     <% @recommended_movierecords.each do |movierecord| %>
@@ -21,7 +21,7 @@
       </div>
     <% end %>
   <% else %>
-    <p><%= t('.no_result') %></p>
+    <p style="font-size: 25px; color: white; font-weight: bold;  padding: 40px 0 30px;"><%= t('.no_result') %></p>
   <% end %>
   <%= link_to t('defaults.back'), :back, class: 'link' %> 
 </div>
