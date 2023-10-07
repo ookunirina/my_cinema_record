@@ -1,7 +1,7 @@
 <%= stylesheet_link_tag 'simple_calendar' %>
 <% content_for(:title, t('.title')) %>
 <div class="toppage">
-<h1><%= t('.title') %></h1>
+<h1 style="color: black;"><%= t('.title') %></h1>
 <br>
 
 <div class="row">
@@ -30,18 +30,18 @@
 <%= form_with(model: @schedule, local: true) do |form| %>
 
   <div class="title">
-    <div class="form-tag">タイトル</div>
+    <div class="form-tag" style="color: black;">タイトル</div>
     <%= form.text_field :title %>
   </div>
 
 
   <div class="content">
-    <div class="form-tag">内容</div>
+    <div class="form-tag" style="color: black;">内容</div>
     <%= form.text_area :content, class: 'form-control' %>
   </div>
 
     <div class="time">
-    <div class="form-tag">時間</div>
+    <div class="form-tag" style="color: black;">日時</div>
     <%= form.datetime_select :start_time %>
   </div>
 

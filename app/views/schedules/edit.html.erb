@@ -1,28 +1,30 @@
 <%= stylesheet_link_tag 'simple_calendar' %>  
 <% content_for(:title, t('.title')) %>
-  <div class="text-center">
+  <div class="text-center py-3">
   <h1><%= t('.title') %></h1>
   
   <%= form_with(model: @schedule, local: true) do |form| %>
 
-    <div class="title">
+    <div class="title pt-4">
       <div class="form-tag">タイトル</div>
       <%= form.text_field :title, class: 'wide-text-field' %>
     </div>
 
-    <div class="content">
+    <div class="content pt-4">
       <div class="form-tag">内容</div>
       <%= form.text_area :content, class: 'form-control' %>
     </div>
 
-    <div class="time">
-      <div class="form-tag">時間</div>
+    <div class="time pt-4">
+      <div class="form-tag">日時</div>
       <%= form.datetime_select :start_time %>
     </div>
 
-    <div class="submit">
+    <div class="submit py-2">
       <%= form.submit %>
     </div>
-
+    
+    <%= link_to '予定カレンダーに戻る', schedules_path, class: 'link' %><br>
+    
   <% end %>
 </div>
