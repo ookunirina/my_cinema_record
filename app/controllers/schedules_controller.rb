@@ -36,7 +36,7 @@ class SchedulesController < ApplicationController
     @schedule = current_user.schedules.find(params[:id])
 
     if @schedule.update(schedule_parameter)
-      redirect_to schedules_path, success: t('defaults.message.updated')
+      redirect_to @schedule, success: t('defaults.message.updated')
     else
       flash.now[:danger] = t('defaults.message.not_updated')
       render :edit, status: :unprocessable_entity
