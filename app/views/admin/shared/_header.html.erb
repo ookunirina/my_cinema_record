@@ -1,0 +1,31 @@
+<!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+      <%= link_to admin_movierecords_path, class: "nav-link #{active_if('admin/movierecords')}" do %>
+      <i class="nav-icon far fa-file"></i>
+      <p>
+        <%= t('admin.movierecords.index.title') %>
+      </p>
+    <% end %>
+  </li>
+  <li class="nav-item">
+    <%= link_to admin_users_path, class: "nav-link #{active_if('admin/users')}" do %>
+      <i class="nav-icon far fa-user"></i>
+      <p>
+        <%= t('admin.users.index.title') %>
+      </p>
+    <% end %>
+    </li>
+      <%= button_to t('defaults.logout'), admin_logout_path, class: 'btn', method: :delete %>
+    </li>
+  </ul>
+</nav>
+<!-- /.navbar -->
+      </li>
+    </ul>
+  </nav>
+  
+<!-- /.navbar -->
