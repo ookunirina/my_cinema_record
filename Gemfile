@@ -56,7 +56,12 @@ gem 'sass-rails'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'ransack', '~> 3.2.1'
+
+# sorcery for authentication
 gem 'sorcery'
+
+gem 'enum_help'
+
 # translation
 gem 'rails-i18n'
 
@@ -72,6 +77,9 @@ gem 'dotenv-rails'
 # AWS
 gem 'aws-sdk-s3', require: false
 gem 'fog-aws'
+
+#ページネーション
+gem 'kaminari'
 
 # カレンダー
 gem 'simple_calendar'

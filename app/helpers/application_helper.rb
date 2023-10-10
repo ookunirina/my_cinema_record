@@ -3,10 +3,14 @@ module ApplicationHelper
     session[:user_id].present?
   end
 
-  def page_title(page_title = '')
-    base_title = 'My Cinema Record'
+  def page_title(page_title = '', admin = false)
+    base_title = if admin
+                 'My Cinema Record(管理画面)'
+                 else
+                 'My Cinema Record'
+                 end
 
-    page_title.empty? ? base_title : "#{page_title} | #{base_title}"
+    page_title.empty? ? base_title : page_title + " | " + base_title
   end
 
   def default_meta_tags
@@ -44,5 +48,9 @@ module ApplicationHelper
       '<i class="fa fa-crown" style="color:#c27100"></i>'
     ]
     crown_icons[rank].html_safe
+  end
+
+  def active_if(path)
+    path == controller_path ? 'active' : ''
   end
 end
