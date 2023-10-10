@@ -31,4 +31,13 @@ Rails.application.routes.draw do
   resources :rankings, only: :index
   resource :profile, only: %i[show edit update]
   resources :password_resets, only: %i[new create edit update]
+
+  namespace :admin do
+    root to: 'dashmovierecords#index'
+    get 'login', to: 'user_sessions#new'
+    post 'login', to: 'user_sessions#create'
+    delete 'logout', to: 'user_sessions#destroy'
+    resources :users, only: %i[index show edit update destroy]
+    resources :movierecords, only: %i[index show edit update destroy]
+  end
 end
