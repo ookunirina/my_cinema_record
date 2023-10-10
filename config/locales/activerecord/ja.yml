@@ -9,6 +9,7 @@ ja:
         password: 'パスワード'
         password_confirmation: 'パスワード確認'
         avatar: 'アバター'
+        role: '権限'
       movierecord:
         title: '映画のタイトル'
         viewing_style: '視聴方法'
@@ -16,3 +17,14 @@ ja:
         tag: 'タグ'
         image_url: '写真'
         review: '感想'
+        user: '作成者'
+   
+        id: 'ID'
+        created_at: '作成日時'
+        updated_at: '更新日時'
+ 
+    enums:
+      user:
+        role:
+          general: '一般'
+          admin: '管理者'
