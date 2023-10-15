@@ -37,13 +37,13 @@ Rails.application.configure do
   config.active_storage.service = :local
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
 
   config.action_mailer.perform_caching = false
 
   # Use letter_opener_web for development
   config.action_mailer.delivery_method = :letter_opener_web
-  config.action_mailer.default_url_options = { host: 'localhost:3000' }
+ 
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
@@ -71,4 +71,19 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
+
+  # deviseの設定
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  config.action_mailer.raise_delivery_errors = true # メール送信時にエラーが発生した場合、エラーを表示
+  config.action_mailer.delivery_method = :smtp # メール送信の方法をSMTP経由に設定
+  config.action_mailer.smtp_settings = { # SMTPの設定
+    port: 587,
+    domain: 'gmail.com',
+    address: "smtp.gmail.com",
+    user_name:  ENV['GMAIL_ADDRESS'],
+    password: ENV['GMAIL_PASSWORD'],
+    authentication: 'plain', # 認証方式としてPLAINを使用
+    enable_starttls_auto: true # STARTTLS（Transport Layer Security）を自動的に有効にする設定(セキュアな通信)
+  }
 end
