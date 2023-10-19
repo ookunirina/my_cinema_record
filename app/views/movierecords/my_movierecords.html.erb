@@ -1,9 +1,10 @@
 <% content_for(:title, t('.title')) %>
-<div class="container pt-3">
+<div class="container pt-4">
   <div class="row">
     <div class="col-lg-10 offset-lg-1">
+    <h1><%= t('.title') %></h1>
       <!-- 検索フォーム -->
-      <%= render 'search_form', url: movierecords_path %>
+      <%= render 'search_form', url: my_movierecords_path %>
     </div>
   </div>
   <!-- 記録一覧 -->

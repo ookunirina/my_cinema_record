@@ -1,7 +1,7 @@
 <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-2 mb-5">
   <div id="movierecord-id-<%= movierecord.id %>">
     <div class="card p-2 mx-3">
-      <%= image_tag movierecord.image_url_url, class: 'card-img-top'%>
+      <%= image_tag movierecord.image_url_url, size: '150x100', class: 'card-img-top'%>
       <div class="card-body">
         <h5 class="card-title">
           <%= link_to movierecord.title, movierecord_path(movierecord)  %>
