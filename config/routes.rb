@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get 'movies/search', to: 'movies#search'
   get 'movies/show', to: 'movies#show'
   get 'recommended', to: 'recommended#index'
+  get 'my_movierecords', to: 'movierecords#my_movierecords'
 
   resources :movierecords do
     collection do
