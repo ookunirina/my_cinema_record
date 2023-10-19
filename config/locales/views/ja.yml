@@ -59,7 +59,6 @@ ja:
   movierecords:
     index:
       title: '映画の記録一覧'
-      making: '映画の記録を作成する'
       no_result: '映画の記録がありません'
     new:
       title: '映画の記録を作成'
@@ -73,6 +72,10 @@ ja:
     create:
       success: '記録を作成しました'
       fail: '記録を作成できませんでした'
+    my_movierecords:
+      title: '自分の映画記録一覧'
+      no_result: '自分の映画記録がありません。'
+
   profiles:
     show:
       title: 'マイページ'
