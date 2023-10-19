@@ -13,7 +13,7 @@
         <% if @movierecords.present? %>
           <%= render @movierecords %>
         <% else %>
-          <p><%= t('.no_result') %></p>
+          <p style="font-size: 23px; color: white; font-weight: bold;  padding: 40px 0 30px;"><%= t('.no_result') %></p>
         <% end %>
         <%= link_to t('defaults.topback'), root_path, class: 'link' %>
       </div>
