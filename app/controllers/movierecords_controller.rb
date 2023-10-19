@@ -61,6 +61,12 @@ class MovierecordsController < ApplicationController
     @movierecords = @tag.movierecords.all
   end
 
+  def my_movierecords
+    @movierecords = current_user.movierecords.includes(:user).order(created_at: :desc)
+    @q = @movierecords.ransack(params[:q]) 
+    @movierecords = @q.result(distinct: true)
+  end
+
   private
 
   def movierecord_params
