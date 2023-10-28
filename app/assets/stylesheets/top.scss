@@ -23,6 +23,7 @@
 
 body {
   background-color: #7f0909f1;
+  min-height: 100dvh;
 }
 
 .nav-link {
@@ -91,4 +92,14 @@ body {
 h2{
   font-size: 40px;
   color: white;
+}
+
+.custom-image {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* プロフィールリンク用 */
+.link-with-spacing {
+  line-height: 3;
 }
