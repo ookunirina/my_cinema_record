@@ -20,6 +20,11 @@
       <%= form.datetime_select :start_time %>
     </div>
 
+    <div class="reminder-time pt-4">
+      <div class="form-tag">予定通知時間 (分)</div>
+      <%= form.number_field :reminder_time, placeholder: '例: 3 (3分前)', class: 'wide-text-field' %>
+    </div>
+
     <div class="submit py-2">
       <%= form.submit %>
     </div>
