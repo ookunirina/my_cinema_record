@@ -12,6 +12,7 @@
     <tr>
       <th>タイトル</th>
       <th>日程</th>
+      <th>予定通知時間 (分)</th>
     </tr>
   </thead>
 
@@ -20,6 +21,7 @@
       <tr>
         <td><%= link_to schedule.title , schedule %></td>
         <td><%= schedule.start_time.strftime("%m-%d %H:%M") %></td>
+        <td><%= "#{schedule.reminder_time} 分前" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -43,6 +45,12 @@
     <div class="time">
     <div class="form-tag" style="color: black;">日時</div>
     <%= form.datetime_select :start_time %>
+  </div>
+
+    <div class="reminder-time">
+    <div class="form-tag" style="color: black;">予定通知時間 (分)</div>
+    <span class="badge bg-info text-dark">日時の時間から「-」された時間にメールで通知が届きます。</span>
+    <%= form.number_field :reminder_time, placeholder: '例: 3 (3分前に通知)' %>
   </div>
 
  <div class="submit">
