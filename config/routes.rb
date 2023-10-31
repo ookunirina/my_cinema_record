@@ -10,10 +10,9 @@ Rails.application.routes.draw do
   get 'login', to: 'user_sessions#new'
   post 'login', to: 'user_sessions#create'
   delete 'logout', to: 'user_sessions#destroy'
-  get 'movie_information', to: 'movie_information#index'
+
   get 'movies/search', to: 'movies#search'
   get 'movies/show', to: 'movies#show'
-  get 'recommended', to: 'recommended#index'
   get 'my_movierecords', to: 'movierecords#my_movierecords'
 
   resources :movierecords do
@@ -28,8 +27,10 @@ Rails.application.routes.draw do
   end
 
   resources :users, only: %i[new create]
+  resources :movie_information, only: [:index]
   resources :schedules
-  resources :rankings, only: :index
+  resources :recommended, only: [:index]
+  resources :rankings, only: [:index]
   resource :profile, only: %i[show edit update]
   resources :password_resets, only: %i[new create edit update]
 
