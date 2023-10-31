@@ -18,7 +18,7 @@ class SchedulesController < ApplicationController
     if @schedule.save
       redirect_to schedules_path, success: t('schedules.create.success')
     else 
-      redirect_to schedules_path,success: t('schedules.create.fail')
+      redirect_to schedules_path,danger: t('schedules.create.fail')
     end
   end
 
@@ -46,6 +46,6 @@ class SchedulesController < ApplicationController
   private
 
   def schedule_parameter
-    params.require(:schedule).permit(:title, :content, :start_time)
+    params.require(:schedule).permit(:title, :content, :start_time, :reminder_time)
   end
 end
