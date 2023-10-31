@@ -5,8 +5,8 @@
 <p>以下の予定が近づいています。</p>
 <p>---------------------------------</p>
 <p>〜予定タイトル〜</p>
-<p><%=「 @schedule.title 」%></p>
+<p><%= @schedule.title %></p>
 <p>〜予定内容〜</p>
-<p><%=「 @schedule.content 」%></p>
+<p><%= @schedule.content %></p>
 <p>〜予定日時〜</p>
-<p><%=「 @schedule.start_time.strftime("%Y年%m月%d日 %H:%M") 」%></p>
+<p><%= @schedule.start_time.strftime("%Y年%m月%d日 %H:%M") %></p>
