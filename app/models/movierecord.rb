@@ -11,7 +11,7 @@ class Movierecord < ApplicationRecord
 
   validates :title, presence: true, length: { maximum: 100 }
   validates :viewing_style, presence: true
-  validates :review, length: { maximum: 65_535 }
+  validates :review, presence: true, length: { maximum: 65_535 }
 
   def save_with_tags(tag_names:)
     ActiveRecord::Base.transaction do
