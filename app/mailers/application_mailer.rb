@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'my_cinema_record@gmail.com'
+  default from: "My Cinema Record <#{ENV['GMAIL_ADDRESS']}>"
   layout 'mailer'
 end

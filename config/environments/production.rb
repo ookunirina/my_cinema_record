@@ -64,7 +64,7 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
-  host = 'https://my-cinema-record-564b6d99d640.herokuapp.com/'
+  host = 'https://my-cinema-record.com/'
   config.action_mailer.default_url_options = { protocol: 'https', host: host }
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
