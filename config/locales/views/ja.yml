@@ -67,8 +67,8 @@ ja:
     edit:
       title: '映画の記録を編集'
     likes:
-      title: 'ブックマーク一覧'
-      no_result: 'ブックマーク中の映画記録がありません。'
+      title: 'いいね一覧'
+      no_result: 'いいねした映画記録がありません。'
     create:
       success: '記録を作成しました'
       fail: '記録を作成できませんでした'

@@ -2,11 +2,13 @@
   <div id="like">
     <% if @movierecord.likes.find_by(user_id: current_user.id) %>
       <%= button_to movierecord_like_path(@movierecord, @movierecord.likes.find_by(user_id: current_user.id)), method: :delete, remote: true do %>
-        <i class="fa-solid fa-star fa-bounce fa-xl" style="color: #fff700;"></i><%= movierecord.likes.count %>
+        <span>いいねしました！</span>
+        <i class="fa-solid fa-thumbs-up fa-shake fa-lg" style="color: #f3d35e;"></i><%= movierecord.likes.count %>
         <% end %>
         <% else %>
       <%= button_to movierecord_likes_path(@movierecord), remote: true do %>
-        <i class="fa-solid fa-star fa-xl" style="color: #9e9e9e;"></i><%= movierecord.likes.count %>
+        <span>いいねしますか？</span>
+        <i class="fa-regular fa-thumbs-up fa-lg" style="color: #000000;"></i><%= movierecord.likes.count %>
         <% end %>
     <% end %>
   </div>
