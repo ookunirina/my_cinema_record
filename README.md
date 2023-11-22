@@ -1,8 +1,10 @@
 # My Cinema Record
+[![GitHub Logo](https://github.com/ookunirina/my_cinema_record/assets/111048512/95f5edc1-818a-4e48-abd5-1123b6e9020e)](https://my-cinema-record.com/)
 
 # サービス概要
  自分で観た映画を記録して残しておけます。Twitterで記録をツイートしてシェアできます。映画を観に行きたいと思ったユーザー用に参考資料など見れるサービス。
-
+### ▼ サービスURL
+https://my-cinema-record.com/
 
 # メインのターゲットユーザー
  映画好きで観た映画を記録してコレクションとして残しておきたいユーザー、いち早く観た映画をみんなに自慢したいユーザー、またそれを見て映画を観に行きたいと思った時に、他の人の映画の感想を参考にしたいユーザー
