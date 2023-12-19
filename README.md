@@ -89,16 +89,16 @@ TMDb API使用する。
  映画を楽しむ人たちがより充実した映画ライフを送るために、このサービスを作りたいと考えています。
 
 # 主な使用技術
-Ruby 3.2.2
-Rails 7.0.4
-JavaScript
-postgresql
-AWS S3
-Heroku
-TMDb API
+- Ruby 3.2.2
+- Rails 7.0.4
+- JavaScript
+- postgresql
+- AWS S3
+- Heroku
+- TMDb API
 
 # 画面遷移図
 https://www.figma.com/file/6mhiau7jFO9BIFwxGoW5Fl/%E7%84%A1%E9%A1%8C?type=design&node-id=0%3A1&mode=design&t=YGD2OeusxeT1EHZk-1
 
 # ER図
-[![Image from Gyazo](https://i.gyazo.com/dab095fd5f149c7a7b273a6dd3862e2a.png)](https://gyazo.com/dab095fd5f149c7a7b273a6dd3862e2a)
+![image](https://github.com/ookunirina/my_cinema_record/assets/111048512/49fc91e8-51e3-4ce8-85f4-45df14423495)
